@@ -1,0 +1,5 @@
+docutils
+Sphinx
+Jinja2
+MarkupSafe
+sphinx_rtd_theme
