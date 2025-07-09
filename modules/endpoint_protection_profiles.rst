@@ -1,5 +1,5 @@
-endpoint_protection_profiles - Protection Profile Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+endpoint_protection_profiles - Protection Profile Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ endpoint_protection_profiles - Protection Profile Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Protection Profile Resource API V2 for FortiSASE
+Protection Profile Resource.
 
 Requirements
 ------------

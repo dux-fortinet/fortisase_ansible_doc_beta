@@ -1,5 +1,5 @@
-auth_radius_servers - RADIUS Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+auth_radius_servers - RADIUS Resource
++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ auth_radius_servers - RADIUS Resource API V2 for FortiSASE
 
 Synopsis
 --------
-RADIUS Resource API V2 for FortiSASE
+RADIUS Resource.
 
 Requirements
 ------------

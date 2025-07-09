@@ -1,5 +1,5 @@
-endpoint_ztna_rules - ZTNA Rule Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+endpoint_ztna_rules - ZTNA Rule Resource
+++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ endpoint_ztna_rules - ZTNA Rule Resource API V2 for FortiSASE
 
 Synopsis
 --------
-ZTNA Rule Resource API V2 for FortiSASE
+ZTNA Rule Resource.
 
 Requirements
 ------------

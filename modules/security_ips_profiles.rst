@@ -1,5 +1,5 @@
-security_ips_profiles - IPS Profile Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_ips_profiles - IPS Profile Resource
+++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_ips_profiles - IPS Profile Resource API V2 for FortiSASE
 
 Synopsis
 --------
-IPS Profile Resource API V2 for FortiSASE
+IPS Profile Resource.
 
 Requirements
 ------------

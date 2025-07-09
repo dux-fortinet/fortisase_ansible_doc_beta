@@ -1,5 +1,5 @@
-auth_ldap_servers - LDAP Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++
+auth_ldap_servers - LDAP Resource
++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ auth_ldap_servers - LDAP Resource API V2 for FortiSASE
 
 Synopsis
 --------
-LDAP Resource API V2 for FortiSASE
+LDAP Resource.
 
 Requirements
 ------------

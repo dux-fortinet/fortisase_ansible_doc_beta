@@ -1,5 +1,5 @@
-security_dlp_profiles - DLP Profile Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_dlp_profiles - DLP Profile Resource
+++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_dlp_profiles - DLP Profile Resource API V2 for FortiSASE
 
 Synopsis
 --------
-DLP Profile Resource API V2 for FortiSASE
+DLP Profile Resource.
 
 Requirements
 ------------

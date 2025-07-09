@@ -1,5 +1,5 @@
-security_service_groups - Service Group Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_service_groups - Service Group Resource
+++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_service_groups - Service Group Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Service Group Resource API V2 for FortiSASE
+Service Group Resource.
 
 Requirements
 ------------

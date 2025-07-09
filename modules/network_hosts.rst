@@ -1,5 +1,5 @@
-network_hosts - Host Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++
+network_hosts - Host Resource
++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ network_hosts - Host Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Host Resource API V2 for FortiSASE
+Host Resource.
 
 Requirements
 ------------

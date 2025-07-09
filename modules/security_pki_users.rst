@@ -1,5 +1,5 @@
-security_pki_users - PKI User Resource API for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_pki_users - PKI User Resource
+++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_pki_users - PKI User Resource API for FortiSASE
 
 Synopsis
 --------
-PKI User Resource API for FortiSASE
+PKI User Resource.
 
 Requirements
 ------------

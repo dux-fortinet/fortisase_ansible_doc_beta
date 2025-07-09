@@ -1,5 +1,5 @@
-private_access_network_configuration - Secure Private Access Resource API for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+private_access_network_configuration - Secure Private Access Resource
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ private_access_network_configuration - Secure Private Access Resource API for Fo
 
 Synopsis
 --------
-Secure Private Access Resource API for FortiSASE
+Secure Private Access Resource.
 
 Requirements
 ------------

@@ -1,5 +1,5 @@
-security_video_filter_youtube_key - Video Filter Youtube API Key Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_video_filter_youtube_key - Video Filter Youtube API Key Resource
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_video_filter_youtube_key - Video Filter Youtube API Key Resource API V2
 
 Synopsis
 --------
-Video Filter Youtube API Key Resource API V2 for FortiSASE
+Video Filter Youtube API Key Resource.
 
 Requirements
 ------------

@@ -1,5 +1,5 @@
-security_services - Service Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_services - Service Resource
+++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_services - Service Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Service Resource API V2 for FortiSASE
+Service Resource.
 
 Requirements
 ------------

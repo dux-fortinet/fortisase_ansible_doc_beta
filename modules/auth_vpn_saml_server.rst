@@ -1,5 +1,5 @@
-auth_vpn_saml_server - VPN User SSO Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+auth_vpn_saml_server - VPN User SSO Resource
+++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ auth_vpn_saml_server - VPN User SSO Resource API V2 for FortiSASE
 
 Synopsis
 --------
-VPN User SSO Resource API V2 for FortiSASE
+VPN User SSO Resource.
 
 Requirements
 ------------

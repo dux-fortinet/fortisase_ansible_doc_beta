@@ -1,5 +1,5 @@
-endpoint_connection_profiles - Connection Profile Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+endpoint_connection_profiles - Connection Profile Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ endpoint_connection_profiles - Connection Profile Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Connection Profile Resource API V2 for FortiSASE
+Connection Profile Resource.
 
 Requirements
 ------------

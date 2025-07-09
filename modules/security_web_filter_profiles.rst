@@ -1,5 +1,5 @@
-security_web_filter_profiles - Web Filter Profile Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_web_filter_profiles - Web Filter Profile Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_web_filter_profiles - Web Filter Profile Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Web Filter Profile Resource API V2 for FortiSASE
+Web Filter Profile Resource.
 
 Requirements
 ------------

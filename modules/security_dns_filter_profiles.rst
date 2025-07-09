@@ -1,5 +1,5 @@
-security_dns_filter_profiles - DNS Filter Profile Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_dns_filter_profiles - DNS Filter Profile Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_dns_filter_profiles - DNS Filter Profile Resource API V2 for FortiSASE
 
 Synopsis
 --------
-DNS Filter Profile Resource API V2 for FortiSASE
+DNS Filter Profile Resource.
 
 Requirements
 ------------

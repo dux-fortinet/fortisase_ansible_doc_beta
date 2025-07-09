@@ -1,5 +1,5 @@
-security_application_control_profiles - Application Control Profile Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_application_control_profiles - Application Control Profile Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_application_control_profiles - Application Control Profile Resource API
 
 Synopsis
 --------
-Application Control Profile Resource API V2 for FortiSASE
+Application Control Profile Resource.
 
 Requirements
 ------------

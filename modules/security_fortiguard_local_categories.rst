@@ -1,5 +1,5 @@
-security_fortiguard_local_categories - FortiGuard Local Category Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_fortiguard_local_categories - FortiGuard Local Category Resource
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_fortiguard_local_categories - FortiGuard Local Category Resource API V2
 
 Synopsis
 --------
-FortiGuard Local Category Resource API V2 for FortiSASE
+FortiGuard Local Category Resource.
 
 Requirements
 ------------

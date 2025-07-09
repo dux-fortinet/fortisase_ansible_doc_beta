@@ -1,5 +1,5 @@
-network_implicit_dns_rules - Implicit DNS Rule Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+network_implicit_dns_rules - Implicit DNS Rule Resource
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ network_implicit_dns_rules - Implicit DNS Rule Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Implicit DNS Rule Resource API V2 for FortiSASE
+Implicit DNS Rule Resource.
 
 Requirements
 ------------

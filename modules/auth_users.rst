@@ -1,5 +1,5 @@
-auth_users - User Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++
+auth_users - User Resource
+++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ auth_users - User Resource API V2 for FortiSASE
 
 Synopsis
 --------
-User Resource API V2 for FortiSASE
+User Resource.
 
 Requirements
 ------------

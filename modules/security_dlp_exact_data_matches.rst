@@ -1,5 +1,5 @@
-security_dlp_exact_data_matches - DLP Exact Data Match Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_dlp_exact_data_matches - DLP Exact Data Match Resource
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_dlp_exact_data_matches - DLP Exact Data Match Resource API V2 for Forti
 
 Synopsis
 --------
-DLP Exact Data Match Resource API V2 for FortiSASE
+DLP Exact Data Match Resource.
 
 Requirements
 ------------

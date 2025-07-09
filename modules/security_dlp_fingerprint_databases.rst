@@ -1,5 +1,5 @@
-security_dlp_fingerprint_databases - DLP Fingerprint Database Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_dlp_fingerprint_databases - DLP Fingerprint Database Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_dlp_fingerprint_databases - DLP Fingerprint Database Resource API V2 fo
 
 Synopsis
 --------
-DLP Fingerprint Database Resource API V2 for FortiSASE
+DLP Fingerprint Database Resource.
 
 Requirements
 ------------

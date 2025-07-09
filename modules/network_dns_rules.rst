@@ -1,5 +1,5 @@
-network_dns_rules - DNS Rule Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+network_dns_rules - DNS Rule Resource
++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ network_dns_rules - DNS Rule Resource API V2 for FortiSASE
 
 Synopsis
 --------
-DNS Rule Resource API V2 for FortiSASE
+DNS Rule Resource.
 
 Requirements
 ------------

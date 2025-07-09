@@ -1,5 +1,5 @@
-security_dlp_dictionaries - DLP Dictionary Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_dlp_dictionaries - DLP Dictionary Resource
++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_dlp_dictionaries - DLP Dictionary Resource API V2 for FortiSASE
 
 Synopsis
 --------
-DLP Dictionary Resource API V2 for FortiSASE
+DLP Dictionary Resource.
 
 Requirements
 ------------

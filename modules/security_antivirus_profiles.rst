@@ -1,5 +1,5 @@
-security_antivirus_profiles - Antivirus Profile Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_antivirus_profiles - Antivirus Profile Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_antivirus_profiles - Antivirus Profile Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Antivirus Profile Resource API V2 for FortiSASE
+Antivirus Profile Resource.
 
 Requirements
 ------------

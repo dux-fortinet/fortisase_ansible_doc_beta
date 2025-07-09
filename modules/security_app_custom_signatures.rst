@@ -1,5 +1,5 @@
-security_app_custom_signatures - Custom Application Signature Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_app_custom_signatures - Custom Application Signature Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_app_custom_signatures - Custom Application Signature Resource API V2 fo
 
 Synopsis
 --------
-Custom Application Signature Resource API V2 for FortiSASE
+Custom Application Signature Resource.
 
 Requirements
 ------------

@@ -1,5 +1,5 @@
-endpoint_group_ad_user_profiles - Group & AD Users Profile Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+endpoint_group_ad_user_profiles - Group & AD Users Profile Resource
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ endpoint_group_ad_user_profiles - Group & AD Users Profile Resource API V2 for F
 
 Synopsis
 --------
-Group & AD Users Profile Resource API V2 for FortiSASE
+Group & AD Users Profile Resource.
 
 Requirements
 ------------

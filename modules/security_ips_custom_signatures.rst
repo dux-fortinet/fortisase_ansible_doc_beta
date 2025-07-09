@@ -1,5 +1,5 @@
-security_ips_custom_signatures - IPS Custom Signature Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_ips_custom_signatures - IPS Custom Signature Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_ips_custom_signatures - IPS Custom Signature Resource API V2 for FortiS
 
 Synopsis
 --------
-IPS Custom Signature Resource API V2 for FortiSASE
+IPS Custom Signature Resource.
 
 Requirements
 ------------

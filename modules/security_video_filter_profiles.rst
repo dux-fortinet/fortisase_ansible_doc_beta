@@ -1,5 +1,5 @@
-security_video_filter_profiles - Video Filter Profile Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_video_filter_profiles - Video Filter Profile Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_video_filter_profiles - Video Filter Profile Resource API V2 for FortiS
 
 Synopsis
 --------
-Video Filter Profile Resource API V2 for FortiSASE
+Video Filter Profile Resource.
 
 Requirements
 ------------

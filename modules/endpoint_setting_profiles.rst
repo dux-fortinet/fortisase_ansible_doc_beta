@@ -1,5 +1,5 @@
-endpoint_setting_profiles - Settings Profile Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+endpoint_setting_profiles - Settings Profile Resource
++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ endpoint_setting_profiles - Settings Profile Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Settings Profile Resource API V2 for FortiSASE
+Settings Profile Resource.
 
 Requirements
 ------------

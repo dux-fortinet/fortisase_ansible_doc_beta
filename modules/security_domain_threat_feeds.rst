@@ -1,5 +1,5 @@
-security_domain_threat_feeds - Domain Threat Feed Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_domain_threat_feeds - Domain Threat Feed Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_domain_threat_feeds - Domain Threat Feed Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Domain Threat Feed Resource API V2 for FortiSASE
+Domain Threat Feed Resource.
 
 Requirements
 ------------

@@ -1,5 +1,5 @@
-network_host_groups - Host Group Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+network_host_groups - Host Group Resource
++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ network_host_groups - Host Group Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Host Group Resource API V2 for FortiSASE
+Host Group Resource.
 
 Requirements
 ------------

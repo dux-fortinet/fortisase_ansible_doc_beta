@@ -1,5 +1,5 @@
-security_url_threat_feeds - URL Threat Feed Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_url_threat_feeds - URL Threat Feed Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_url_threat_feeds - URL Threat Feed Resource API V2 for FortiSASE
 
 Synopsis
 --------
-URL Threat Feed Resource API V2 for FortiSASE
+URL Threat Feed Resource.
 
 Requirements
 ------------

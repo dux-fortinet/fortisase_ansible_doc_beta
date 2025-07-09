@@ -1,5 +1,5 @@
-security_ip_threat_feeds - IP Threat Feed Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_ip_threat_feeds - IP Threat Feed Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_ip_threat_feeds - IP Threat Feed Resource API V2 for FortiSASE
 
 Synopsis
 --------
-IP Threat Feed Resource API V2 for FortiSASE
+IP Threat Feed Resource.
 
 Requirements
 ------------

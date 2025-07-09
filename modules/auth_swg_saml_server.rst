@@ -1,5 +1,5 @@
-auth_swg_saml_server - SWG User SSO Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+auth_swg_saml_server - SWG User SSO Resource
+++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ auth_swg_saml_server - SWG User SSO Resource API V2 for FortiSASE
 
 Synopsis
 --------
-SWG User SSO Resource API V2 for FortiSASE
+SWG User SSO Resource.
 
 Requirements
 ------------

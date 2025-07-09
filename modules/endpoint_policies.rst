@@ -1,5 +1,5 @@
-endpoint_policies - Endpoint Policy Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+endpoint_policies - Endpoint Policy Resource
+++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ endpoint_policies - Endpoint Policy Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Endpoint Policy Resource API V2 for FortiSASE
+Endpoint Policy Resource.
 
 Requirements
 ------------

@@ -1,5 +1,5 @@
-security_ssl_ssh_profiles - SSL Inspection Profile Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_ssl_ssh_profiles - SSL Inspection Profile Resource
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_ssl_ssh_profiles - SSL Inspection Profile Resource API V2 for FortiSASE
 
 Synopsis
 --------
-SSL Inspection Profile Resource API V2 for FortiSASE
+SSL Inspection Profile Resource.
 
 Requirements
 ------------

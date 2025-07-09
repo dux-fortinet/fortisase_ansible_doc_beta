@@ -1,5 +1,5 @@
-auth_fsso_agents - FSSO Agent Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+auth_fsso_agents - FSSO Agent Resource
+++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ auth_fsso_agents - FSSO Agent Resource API V2 for FortiSASE
 
 Synopsis
 --------
-FSSO Agent Resource API V2 for FortiSASE
+FSSO Agent Resource.
 
 Requirements
 ------------

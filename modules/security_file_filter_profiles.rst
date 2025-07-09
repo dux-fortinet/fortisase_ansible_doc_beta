@@ -1,5 +1,5 @@
-security_file_filter_profiles - File Filter Profile Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_file_filter_profiles - File Filter Profile Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_file_filter_profiles - File Filter Profile Resource API V2 for FortiSAS
 
 Synopsis
 --------
-File Filter Profile Resource API V2 for FortiSASE
+File Filter Profile Resource.
 
 Requirements
 ------------

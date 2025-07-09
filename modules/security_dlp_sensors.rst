@@ -1,5 +1,5 @@
-security_dlp_sensors - DLP Sensor Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_dlp_sensors - DLP Sensor Resource
+++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_dlp_sensors - DLP Sensor Resource API V2 for FortiSASE
 
 Synopsis
 --------
-DLP Sensor Resource API V2 for FortiSASE
+DLP Sensor Resource.
 
 Requirements
 ------------

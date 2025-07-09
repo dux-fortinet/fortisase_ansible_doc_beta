@@ -1,5 +1,5 @@
-endpoint_sandbox_profiles - Sandbox Profile Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+endpoint_sandbox_profiles - Sandbox Profile Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ endpoint_sandbox_profiles - Sandbox Profile Resource API V2 for FortiSASE
 
 Synopsis
 --------
-Sandbox Profile Resource API V2 for FortiSASE
+Sandbox Profile Resource.
 
 Requirements
 ------------

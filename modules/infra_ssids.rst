@@ -1,5 +1,5 @@
-infra_ssids - FortiAP SSID Resource API V2 for FortiSASE
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+infra_ssids - FortiAP SSID Resource
++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ infra_ssids - FortiAP SSID Resource API V2 for FortiSASE
 
 Synopsis
 --------
-FortiAP SSID Resource API V2 for FortiSASE
+FortiAP SSID Resource.
 
 Requirements
 ------------

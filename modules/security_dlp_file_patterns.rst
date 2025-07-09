@@ -1,5 +1,5 @@
-security_dlp_file_patterns - DLP File Pattern Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+security_dlp_file_patterns - DLP File Pattern Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ security_dlp_file_patterns - DLP File Pattern Resource API V2 for FortiSASE
 
 Synopsis
 --------
-DLP File Pattern Resource API V2 for FortiSASE
+DLP File Pattern Resource.
 
 Requirements
 ------------

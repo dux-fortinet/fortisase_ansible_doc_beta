@@ -1,5 +1,5 @@
-auth_user_groups - User Group Resource API V2 for FortiSASE
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+auth_user_groups - User Group Resource
+++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ auth_user_groups - User Group Resource API V2 for FortiSASE
 
 Synopsis
 --------
-User Group Resource API V2 for FortiSASE
+User Group Resource.
 
 Requirements
 ------------
