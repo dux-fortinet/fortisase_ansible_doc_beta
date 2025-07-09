@@ -15,7 +15,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.17.0
 
 
 Parameters
@@ -24,7 +24,7 @@ Parameters
 
  <ul>
  <li><span class="li-head">selector</span> The selector of the facts.<span class="li-normal">type: str</span><span class="li-normal">required: True</span></li>
- <li><span class="li-head">params</span> The params of the facts. Different selectors have different required params. Check FNDN for details. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">params</span> The params of the facts. Different selectors have different required params.<span class="li-normal">type: dict</span></li>
  </ul>
 
  <table class="docutils">
