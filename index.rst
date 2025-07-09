@@ -19,6 +19,7 @@ The FortiSASE Ansible Collection provides Ansible modules for configuring FortiS
    :maxdepth: 1
 
    fortisase_facts.rst
+   modules.rst
 
 .. toctree::
    :glob:
