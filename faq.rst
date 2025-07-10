@@ -54,7 +54,7 @@ Common Parameters
 Almost all modules support the following parameters (except for ``fortisase_generic`` and ``fortisase_facts``):
 
 - ``state``
-- ``force_method``
+- ``force_behavior``
 - ``bypass_validation``
 - ``params``
 
@@ -70,7 +70,7 @@ Examples:
       - name: Add/Update Network DNS Rule
         fortinet.fortisase.network_dns_rules:
           state: present
-          # force_method: post # if you want to force to use the POST method
+          # force_behavior: update # if you want to force the resource to be updated
           # bypass_validation: true # if you want to bypass the Ansible built-in validation
           params:
             primaryKey: "1"
@@ -94,17 +94,17 @@ The default value is "present", so a resource will be created if it doesn't exis
 Alough ``state`` is supported by almost all modules, some resources in FortiSASE can't be deleted, so the corresponding modules can not set state to "absent".
 
 
-force_method
-^^^^^^^^^^^^
+force_behavior
+^^^^^^^^^^^^^^
 
-We do not encourage to use ``force_method`` except that you are sure the API definition is wrong and you want to fix them on you own immediately.
+We do not encourage to use ``force_behavior`` except that you are sure the API definition is wrong and you want to fix them on you own immediately.
 
 This parameter is used to force the HTTP request method to use to interact with the FortiSASE API.
 
 - "none" means don't force to use any method. The module handles the interaction with the resource based on the API definition.
-- "get" means force to use the GET method.
-- "post" means force to use the POST method.
-- "put" means force to use the PUT method.
+- "read" means force to use the GET method.
+- "create" means force to use the POST method.
+- "update" means force to use the PUT method. (For some resources, the PUT method is not supported, so the module will use the DELETE method to delete the resource and then use the POST method to create the resource.)
 - "delete" means force to use the DELETE method.
 
 The default value is "none".
