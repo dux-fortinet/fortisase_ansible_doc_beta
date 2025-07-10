@@ -1,5 +1,5 @@
-endpoint_ztna_rules - ZTNA Rule Resource
-++++++++++++++++++++++++++++++++++++++++
+endpoint_ztna_tags - ZTNA Tag Resource
+++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,9 +9,9 @@ endpoint_ztna_rules - ZTNA Rule Resource
 
 Synopsis
 --------
-ZTNA Rule Resource.
+ZTNA Tag Resource.
 
-Use API "/resource-api/v2/endpoint/ztna-rules".
+Use API "/resource-api/v2/endpoint/ztna-tags".
 
 Requirements
 ------------
@@ -31,10 +31,7 @@ Parameters
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
  <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span></li>
  <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
- <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
- <li><span class="li-head">tag</span> <span class="li-normal">type: dict</span></li>
- <li><span class="li-head">comments</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">rules</span> <span class="li-normal">type: list</span></li>
+ <li><span class="li-head">name</span> <span class="li-normal">type: str</span></li>
  </ul> </ul>
 
 
@@ -44,35 +41,21 @@ Examples
 
 .. code-block:: yaml
 
-  - name: Update ztna rule
+  - name: Create/Update ztna tag
     hosts: fortisase
     gather_facts: false
     tasks:
-      - name: Create a new endpoint profile, do nothing if the endpoint profile already exists
-        fortinet.fortisase.endpoint_policies:
-          state: present
-          params:
-            primaryKey: "policy1"
-            enabled: true
-      - name: Create/Update ztna tag, do nothing if the ztna tag already exists
+      - name: Create/Update ztna tag
         fortinet.fortisase.endpoint_ztna_tags:
           state: present
           params:
             primaryKey: "tag1"
             name: "tag1"
-      - name: Update ztna rule
-        fortinet.fortisase.endpoint_ztna_rules:
+      - name: Delete ztna tag
+        fortinet.fortisase.endpoint_ztna_tags:
+          state: absent
           params:
-            primaryKey: "policy1"
-            status: "enable" # "enable" or "disable"
-            tag:
-              primaryKey: "tag1"
-              datasource: "endpoint/ztna-tags"
-            comments: "example comment"
-            rules:
-              - os: "windows" # "windows", "macos", "linux", "ios", "android"
-                type: "anti-virus"
-                content: "AV Software is installed and running"
+            primaryKey: "tag1"
   
 
 
