@@ -8,6 +8,10 @@ Prepare host inventory file
 
 Create a file named ``hosts`` in the current directory.
 
+Please change the ``ansible_user`` and ``ansible_password`` to your own FortiSASE username and password.
+
+If you don't want to specify the username and password in the inventory file, you can also specify them in environment variables ``FORTISASE_USERNAME`` and ``FORTISASE_PASSWORD``.
+
 ::
 
    [fortisase]
@@ -22,8 +26,8 @@ Create a file named ``hosts`` in the current directory.
    ansible_httpapi_use_ssl=true
    ansible_httpapi_validate_certs=false
    # Authentication credentials (Specify the username and password in the inventory file or in environment variables)
-   # ansible_user="ABCDEFGHIJKLMNOPQRSTUVWXYZ" # You can also specify the username in environment variable FORTISASE_USERNAME
-   # ansible_password="123123123123123!1Aa" # You can also specify the password in environment variable FORTISASE_PASSWORD
+   ansible_user="ABCDEFGHIJKLMNOPQRSTUVWXYZ" # You can also specify the username in environment variable FORTISASE_USERNAME
+   ansible_password="123123123123123!1Aa" # You can also specify the password in environment variable FORTISASE_PASSWORD
 
 Write the playbook
 ~~~~~~~~~~~~~~~~~~
@@ -61,3 +65,7 @@ you can also observe the verbose output by adding option at the tail:
 ::
 
    ansible-playbook -i hosts test.yml -vvv
+
+For all available modules, please refer to the :doc:`Modules Index <modules>`.
+
+For more information, please refer to the :doc:`FAQ <faq>`.

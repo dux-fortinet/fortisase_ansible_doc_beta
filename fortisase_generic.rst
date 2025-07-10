@@ -1,5 +1,5 @@
-fortisase_generic - Build and send generic FortiSASE API request.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fortisase_generic - Send generic FortiSASE API request.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,7 +9,7 @@ fortisase_generic - Build and send generic FortiSASE API request.
 
 Synopsis
 --------
-This module is for generic fortisase requests. it receives raw json-rpc data, and sends it to fortisase, finally returns the response to users.
+This module is for generic fortisase requests. It receives raw json-rpc data, and sends it to fortisase, finally returns the response to users.
 
 Two parameters schemes are supported, either in raw json format "json" or in ansible recognnizable format "params".
 
@@ -49,7 +49,7 @@ Examples
         fortinet.fortisase.fortisase_generic:
           method: post
           url: "/resource-api/v2/network/dns-rules"
-          params:        
+          params:
             primaryKey: "3"
             primaryDns: "3.3.3.3"
             secondaryDns: "3.3.3.2"
@@ -64,7 +64,7 @@ Examples
         fortinet.fortisase.fortisase_generic:
           method: put
           url: "/resource-api/v2/network/dns-rules/3"
-          params:        
+          params:
             primaryKey: "3"
             primaryDns: "4.4.4.4"
             secondaryDns: "4.4.4.2"
@@ -75,6 +75,29 @@ Examples
         fortinet.fortisase.fortisase_generic:
           method: delete
           url: "/resource-api/v2/network/dns-rules/3"
+  
+  # Using json string
+  - name: FortiSASE Generic Request (Using JSON String)
+    hosts: fortisase
+    gather_facts: false
+    tasks:
+      - name: FortiSASE Generic POST (Create) Request (JSON String)
+        fortinet.fortisase.fortisase_generic:
+          method: post
+          url: "/resource-api/v2/network/dns-rules"
+          json: |
+            {
+              "primaryKey": "3",
+              "primaryDns": "3.3.3.3",
+              "secondaryDns": "3.3.3.2",
+              "domains": ["www.33333.com"],
+              "popDnsOverride": {}
+            }
+      - name: FortiSASE Generic Delete (Delete) Request (JSON String)
+        fortinet.fortisase.fortisase_generic:
+          method: delete
+          url: "/resource-api/v2/network/dns-rules/3"
+          json: "{}"
   
 
 
