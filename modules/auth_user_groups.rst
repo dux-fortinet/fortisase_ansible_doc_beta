@@ -29,12 +29,18 @@ Parameters
  <li><span class="li-head">state</span> The state of the module. "present" means create or update the resource, "absent" means delete the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['present', 'absent']</span><span class="li-normal">default: present</span></li>
  <li><span class="li-head">force_method</span> Specify this option to force the method to use to interact with the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['none', 'get', 'post', 'put', 'delete']</span><span class="li-normal">default: none</span></li>
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
- <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span></li>
- <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
+ <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
  <li><span class="li-head">groupType</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['firewall', 'fsso']</span></li>
- <li><span class="li-head">localUsers</span> <span class="li-normal">type: list</span></li>
- <li><span class="li-head">remoteUserGroups</span> <span class="li-normal">type: list</span></li>
- </ul> </ul>
+ <li><span class="li-head">localUsers</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
+ </ul></li>
+ <li><span class="li-head">remoteUserGroups</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">server</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['auth/ldap-servers', 'auth/radius-servers', 'auth/swg-saml-server', 'auth/vpn-saml-server']</span></li>
+ </ul></li>
+ <li><span class="li-head">matches</span> <span class="li-normal">type: list</span><span class="li-normal">elements: str</span></li>
+ </ul></li>
+ </ul></li>
+ </ul>
 
 
 

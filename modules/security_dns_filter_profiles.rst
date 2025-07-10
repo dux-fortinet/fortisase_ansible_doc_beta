@@ -29,18 +29,34 @@ Parameters
  <li><span class="li-head">state</span> The state of the module. "present" means update the resource. This resource can't be deleted, and does not support "absent" state.<span class="li-normal">type: str</span><span class="li-normal">choices: ['present', 'absent']</span><span class="li-normal">default: present</span></li>
  <li><span class="li-head">force_method</span> Specify this option to force the method to use to interact with the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['none', 'get', 'post', 'put', 'delete']</span><span class="li-normal">default: none</span></li>
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
- <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span></li>
- <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
+ <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
  <li><span class="li-head">useFortiguardFilters</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
  <li><span class="li-head">enableAllLogs</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
  <li><span class="li-head">enableBotnetBlocking</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
  <li><span class="li-head">enableSafeSearch</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
  <li><span class="li-head">allowDnsRequestsOnRatingError</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
- <li><span class="li-head">dnsTranslationEntries</span> <span class="li-normal">type: list</span></li>
- <li><span class="li-head">domainFilters</span> <span class="li-normal">type: list</span></li>
- <li><span class="li-head">fortiguardFilters</span> <span class="li-normal">type: list</span></li>
- <li><span class="li-head">domainThreatFeedFilters</span> <span class="li-normal">type: list</span></li>
- </ul> </ul>
+ <li><span class="li-head">dnsTranslationEntries</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">src</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">dst</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">netmask</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
+ </ul></li>
+ <li><span class="li-head">domainFilters</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">url</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">type</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['regex', 'simple', 'wildcard']</span></li>
+ <li><span class="li-head">action</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'block', 'exempt', 'monitor']</span></li>
+ <li><span class="li-head">enabled</span> <span class="li-normal">type: bool</span></li>
+ </ul></li>
+ <li><span class="li-head">fortiguardFilters</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">action</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'block', 'monitor', 'warning']</span></li>
+ <li><span class="li-head">category</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
+ </ul></li>
+ </ul></li>
+ <li><span class="li-head">domainThreatFeedFilters</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">action</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'block', 'disable', 'monitor', 'warning']</span></li>
+ <li><span class="li-head">category</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
+ </ul></li>
+ </ul></li>
+ </ul></li>
+ </ul>
 
 
 

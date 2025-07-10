@@ -29,19 +29,27 @@ Parameters
  <li><span class="li-head">state</span> The state of the module. "present" means update the resource. This resource can't be deleted, and does not support "absent" state.<span class="li-normal">type: str</span><span class="li-normal">choices: ['present', 'absent']</span><span class="li-normal">default: present</span></li>
  <li><span class="li-head">force_method</span> Specify this option to force the method to use to interact with the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['none', 'get', 'post', 'put', 'delete']</span><span class="li-normal">default: none</span></li>
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
- <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span></li>
- <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
+ <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
  <li><span class="li-head">inspectionMode</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['certificate-inspection', 'deep-inspection', 'no-inspection']</span></li>
- <li><span class="li-head">profileProtocolOptions</span> <span class="li-normal">type: dict</span></li>
- <li><span class="li-head">caCertificate</span> <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">profileProtocolOptions</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">unknownContentEncoding</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['block', 'bypass', 'inspect']</span></li>
+ <li><span class="li-head">oversizedAction</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'block']</span></li>
+ <li><span class="li-head">compressedLimit</span> <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">uncompressedLimit</span> <span class="li-normal">type: int</span></li>
+ </ul></li>
+ <li><span class="li-head">caCertificate</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
+ </ul></li>
  <li><span class="li-head">expiredCertificateAction</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'block']</span></li>
  <li><span class="li-head">revokedCertificateAction</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'block']</span></li>
  <li><span class="li-head">timedOutValidationCertificateAction</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'block']</span></li>
  <li><span class="li-head">validationFailedCertificateAction</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'block']</span></li>
  <li><span class="li-head">certProbeFailure</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'block']</span></li>
- <li><span class="li-head">hostExemptions</span> <span class="li-normal">type: list</span></li>
- <li><span class="li-head">urlCategoryExemptions</span> <span class="li-normal">type: list</span></li>
- </ul> </ul>
+ <li><span class="li-head">hostExemptions</span> <span class="li-normal">type: list</span><span class="li-normal">elements: raw</span></li>
+ <li><span class="li-head">urlCategoryExemptions</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['security/fortiguard-categories', 'security/fortiguard-local-categories']</span></li>
+ </ul></li>
+ </ul></li>
+ </ul>
 
 
 

@@ -29,17 +29,35 @@ Parameters
  <li><span class="li-head">state</span> The state of the module. "present" means create or update the resource, "absent" means delete the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['present', 'absent']</span><span class="li-normal">default: present</span></li>
  <li><span class="li-head">force_method</span> Specify this option to force the method to use to interact with the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['none', 'get', 'post', 'put', 'delete']</span><span class="li-normal">default: none</span></li>
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
- <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span></li>
- <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
+ <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
  <li><span class="li-head">proxy</span> <span class="li-normal">type: bool</span></li>
  <li><span class="li-head">category</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['Authentication', 'Email', 'File Access', 'General', 'Network Services', 'Remote Access', 'Tunneling', 'Uncategorized', 'VoIP, Messaging & Other Applications', 'Web Access', 'Web Proxy']</span></li>
  <li><span class="li-head">protocol</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">protocolNumber</span> <span class="li-normal">type: int</span></li>
  <li><span class="li-head">icmpType</span> <span class="li-normal">type: int</span></li>
- <li><span class="li-head">udpPortrange</span> <span class="li-normal">type: list</span></li>
- <li><span class="li-head">sctpPortrange</span> <span class="li-normal">type: list</span></li>
- <li><span class="li-head">tcpPortrange</span> <span class="li-normal">type: list</span></li>
- </ul> </ul>
+ <li><span class="li-head">udpPortrange</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">destination</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">low</span> <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">high</span> <span class="li-normal">type: int</span></li>
+ </ul></li>
+ <li><span class="li-head">source</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">low</span> <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">high</span> <span class="li-normal">type: int</span></li>
+ </ul></li>
+ </ul></li>
+ <li><span class="li-head">sctpPortrange</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">destination</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">low</span> <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">high</span> <span class="li-normal">type: int</span></li>
+ </ul></li>
+ <li><span class="li-head">source</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">low</span> <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">high</span> <span class="li-normal">type: int</span></li>
+ </ul></li>
+ </ul></li>
+ <li><span class="li-head">tcpPortrange</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">destination</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">low</span> <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">high</span> <span class="li-normal">type: int</span></li>
+ </ul></li>
+ <li><span class="li-head">source</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">low</span> <span class="li-normal">type: int</span></li>
+ <li><span class="li-head">high</span> <span class="li-normal">type: int</span></li>
+ </ul></li>
+ </ul></li>
+ </ul></li>
+ </ul>
 
 
 

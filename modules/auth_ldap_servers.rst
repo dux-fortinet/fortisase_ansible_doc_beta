@@ -29,10 +29,9 @@ Parameters
  <li><span class="li-head">state</span> The state of the module. "present" means create or update the resource, "absent" means delete the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['present', 'absent']</span><span class="li-normal">default: present</span></li>
  <li><span class="li-head">force_method</span> Specify this option to force the method to use to interact with the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['none', 'get', 'post', 'put', 'delete']</span><span class="li-normal">default: none</span></li>
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
- <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span></li>
- <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
+ <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
  <li><span class="li-head">server</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">port</span> <span class="li-normal">type: float</span></li>
+ <li><span class="li-head">port</span> <span class="li-normal">type: int</span></li>
  <li><span class="li-head">cnid</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">dn</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">bindType</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['anonymous', 'regular', 'simple']</span></li>
@@ -45,12 +44,17 @@ Parameters
  <li><span class="li-head">groupObjectFilter</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">serverIdentityCheckEnabled</span> <span class="li-normal">type: bool</span></li>
  <li><span class="li-head">passwordRenewalEnabled</span> <span class="li-normal">type: bool</span></li>
- <li><span class="li-head">certificate</span> <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">certificate</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
+ </ul></li>
  <li><span class="li-head">clientCertAuthEnabled</span> <span class="li-normal">type: bool</span></li>
- <li><span class="li-head">clientCert</span> <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">clientCert</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
+ </ul></li>
  <li><span class="li-head">username</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">password</span> <span class="li-normal">type: str</span></li>
- </ul> </ul>
+ </ul></li>
+ </ul>
 
 
 
