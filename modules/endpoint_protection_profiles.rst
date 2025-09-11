@@ -47,6 +47,10 @@ Parameters
  <li><span class="li-head">productId</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">revision</span> <span class="li-normal">type: str</span></li>
  </ul></li>
+ <li><span class="li-head">exclusions</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">files</span> <span class="li-normal">type: list</span><span class="li-normal">elements: str</span></li>
+ <li><span class="li-head">folders</span> <span class="li-normal">type: list</span><span class="li-normal">elements: str</span></li>
+ <li><span class="li-head">filetypes</span> <span class="li-normal">type: str</span></li>
+ </ul></li>
  <li><span class="li-head">protectedFoldersPath</span> <span class="li-normal">type: list</span><span class="li-normal">elements: str</span></li>
  <li><span class="li-head">scheduledScan</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">time</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">repeat</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['daily', 'monthly', 'weekly']</span></li>

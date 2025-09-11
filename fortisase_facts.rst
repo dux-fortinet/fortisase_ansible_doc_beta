@@ -92,6 +92,12 @@ Parameters
  </tr>
  
  <tr>
+ <td>endpoint_group_invitation_codes</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/endpoint/group-invitation-codes/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
  <td>endpoint_policies</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/endpoint/policies/{primaryKey}</td>
@@ -188,6 +194,18 @@ Parameters
  </tr>
  
  <tr>
+ <td>security_antivirus_profile</td>
+ <td>direction, primaryKey</td>
+ <td>/resource-api/v2/security/antivirus-profile/{direction}/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_antivirus_profiles</td>
+ <td></td>
+ <td>/resource-api/v2/security/antivirus-profiles</td>
+ </tr>
+ 
+ <tr>
  <td>security_app_custom_signatures</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/security/app-custom-signatures/{primaryKey}</td>
@@ -197,6 +215,18 @@ Parameters
  <td>security_application_categories</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/security/application-categories/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_application_control_profile</td>
+ <td>direction, primaryKey</td>
+ <td>/resource-api/v2/security/application-control-profile/{direction}/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_application_control_profiles</td>
+ <td></td>
+ <td>/resource-api/v2/security/application-control-profiles</td>
  </tr>
  
  <tr>
@@ -236,15 +266,51 @@ Parameters
  </tr>
  
  <tr>
+ <td>security_dlp_profile</td>
+ <td>direction, primaryKey</td>
+ <td>/resource-api/v2/security/dlp-profile/{direction}/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_dlp_profiles</td>
+ <td></td>
+ <td>/resource-api/v2/security/dlp-profiles</td>
+ </tr>
+ 
+ <tr>
  <td>security_dlp_sensors</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/security/dlp-sensors/{primaryKey}</td>
  </tr>
  
  <tr>
+ <td>security_dns_filter_profile</td>
+ <td>direction, primaryKey</td>
+ <td>/resource-api/v2/security/dns-filter-profile/{direction}/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_dns_filter_profiles</td>
+ <td></td>
+ <td>/resource-api/v2/security/dns-filter-profiles</td>
+ </tr>
+ 
+ <tr>
  <td>security_domain_threat_feeds</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/security/domain-threat-feeds/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_file_filter_profile</td>
+ <td>direction, primaryKey</td>
+ <td>/resource-api/v2/security/file-filter-profile/{direction}/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_file_filter_profiles</td>
+ <td></td>
+ <td>/resource-api/v2/security/file-filter-profiles</td>
  </tr>
  
  <tr>
@@ -278,6 +344,24 @@ Parameters
  </tr>
  
  <tr>
+ <td>security_ips_profile</td>
+ <td>direction, primaryKey</td>
+ <td>/resource-api/v2/security/ips-profile/{direction}/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_ips_profiles</td>
+ <td></td>
+ <td>/resource-api/v2/security/ips-profiles</td>
+ </tr>
+ 
+ <tr>
+ <td>security_profile_group</td>
+ <td>direction, primaryKey</td>
+ <td>/resource-api/v2/security/profile-group/{direction}/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
  <td>security_profile_groups</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/security/profile-groups/{primaryKey}</td>
@@ -302,6 +386,18 @@ Parameters
  </tr>
  
  <tr>
+ <td>security_ssl_ssh_profile</td>
+ <td>direction, primaryKey</td>
+ <td>/resource-api/v2/security/ssl-ssh-profile/{direction}/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_ssl_ssh_profiles</td>
+ <td></td>
+ <td>/resource-api/v2/security/ssl-ssh-profiles</td>
+ </tr>
+ 
+ <tr>
  <td>security_url_threat_feeds</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/security/url-threat-feeds/{primaryKey}</td>
@@ -314,9 +410,33 @@ Parameters
  </tr>
  
  <tr>
+ <td>security_video_filter_profile</td>
+ <td>direction, primaryKey</td>
+ <td>/resource-api/v2/security/video-filter-profile/{direction}/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_video_filter_profiles</td>
+ <td></td>
+ <td>/resource-api/v2/security/video-filter-profiles</td>
+ </tr>
+ 
+ <tr>
  <td>security_video_filter_youtube_key</td>
  <td></td>
  <td>/resource-api/v2/security/video-filter-youtube-key</td>
+ </tr>
+ 
+ <tr>
+ <td>security_web_filter_profile</td>
+ <td>direction, primaryKey</td>
+ <td>/resource-api/v2/security/web-filter-profile/{direction}/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_web_filter_profiles</td>
+ <td></td>
+ <td>/resource-api/v2/security/web-filter-profiles</td>
  </tr>
  
  <tr>
@@ -599,60 +719,6 @@ Parameters
  <td>user_vpn_sessions</td>
  <td></td>
  <td>/monitor-api/v1/user/vpn/sessions</td>
- </tr>
- 
- <tr>
- <td>security_antivirus_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/antivirus-profiles/{primaryKey}</td>
- </tr>
- 
- <tr>
- <td>security_application_control_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/application-control-profiles/{primaryKey}</td>
- </tr>
- 
- <tr>
- <td>security_dlp_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/dlp-profiles/{primaryKey}</td>
- </tr>
- 
- <tr>
- <td>security_dns_filter_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/dns-filter-profiles/{primaryKey}</td>
- </tr>
- 
- <tr>
- <td>security_file_filter_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/file-filter-profiles/{primaryKey}</td>
- </tr>
- 
- <tr>
- <td>security_ips_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/ips-profiles/{primaryKey}</td>
- </tr>
- 
- <tr>
- <td>security_ssl_ssh_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/ssl-ssh-profiles/{primaryKey}</td>
- </tr>
- 
- <tr>
- <td>security_video_filter_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/video-filter-profiles/{primaryKey}</td>
- </tr>
- 
- <tr>
- <td>security_web_filter_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/web-filter-profiles/{primaryKey}</td>
  </tr>
  
  </tbody>

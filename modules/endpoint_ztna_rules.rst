@@ -36,7 +36,7 @@ Parameters
  </ul></li>
  <li><span class="li-head">comments</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">rules</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">os</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['android', 'ios', 'linux', 'macos', 'windows']</span></li>
- <li><span class="li-head">type</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['ad-groups', 'anti-virus', 'certificate', 'ems-management', 'fct-version', 'file', 'ip-range', 'logged-in-domain', 'on-fabric-status', 'os-version', 'registry-key', 'running-process', 'sandbox-detection', 'security', 'security-status', 'user-identity', 'vulnerable-devices', 'windows-security']</span></li>
+ <li><span class="li-head">type</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['ad-groups', 'anti-virus', 'certificate', 'crowdstrike-zta-score', 'ems-management', 'fct-version', 'file', 'ip-range', 'logged-in-domain', 'on-fabric-status', 'os-version', 'registry-key', 'running-process', 'sandbox-detection', 'security', 'security-status', 'user-identity', 'vulnerable-devices', 'windows-security']</span></li>
  <li><span class="li-head">service</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['Custom', 'Google', 'LinkedIn', 'Salesforce']</span></li>
  <li><span class="li-head">account</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">matchType</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['regex', 'simple', 'wildcard']</span></li>

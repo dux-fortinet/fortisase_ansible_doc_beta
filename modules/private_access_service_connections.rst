@@ -49,7 +49,7 @@ Parameters
  <li><span class="li-head">ipsec_pre_shared_key</span> IPSEC auth by pre shared key.<span class="li-normal">type: str</span></li>
  </ul></li>
  <li><span class="li-head">id</span> unique id for service connection<span class="li-normal">type: str</span></li>
- <li><span class="li-head">type</span> BGP Routing Design. Must be same as network configuration. BGP Routing Design.<span class="li-normal">type: str</span><span class="li-normal">choices: ['loopback', 'overlay']</span></li>
+ <li><span class="li-head">type</span> BGP Routing Design. Must be same as network configuration.<span class="li-normal">type: str</span><span class="li-normal">choices: ['loopback', 'overlay']</span></li>
  <li><span class="li-head">config_state</span> Configuration state of service connection.<span class="li-normal">type: str</span><span class="li-normal">choices: ['creating', 'deleting', 'failed', 'success', 'updating']</span></li>
  <li><span class="li-head">seq_num</span> sequential unique number for service connection<span class="li-normal">type: int</span></li>
  <li><span class="li-head">failed_message</span> failure message while config service connection<span class="li-normal">type: str</span></li>

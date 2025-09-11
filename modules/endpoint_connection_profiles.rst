@@ -76,6 +76,7 @@ Parameters
  <li><span class="li-head">preferredDTLSTunnel</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
  <li><span class="li-head">useGuiSamlAuth</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
  <li><span class="li-head">allowPersonalVpns</span> <span class="li-normal">type: bool</span></li>
+ <li><span class="li-head">mtuSize</span> <span class="li-normal">type: int</span></li>
  <li><span class="li-head">availableVPNs</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">type</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['ipSecVPN', 'sslVPN']</span></li>
  <li><span class="li-head">name</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">remoteGateway</span> <span class="li-normal">type: str</span></li>
