@@ -45,7 +45,7 @@ Examples
 
 .. code-block:: yaml
 
-  - name: Update Network Implicit DNS Rule
+  - name: Network Implicit DNS Rule
     hosts: fortisase
     gather_facts: false
     tasks:

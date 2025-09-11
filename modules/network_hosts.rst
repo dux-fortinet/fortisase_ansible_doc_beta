@@ -47,7 +47,25 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Network Host
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      host: "network_host_example"
+    tasks:
+      - name: Create/Update Network Host
+        fortinet.fortisase.network_hosts:
+          state: present
+          params:
+            primaryKey: "{{ host }}"
+            type: "ipmask"
+            location: "internal"
+            subnet: "192.168.4.0/24"
+      - name: Delete Network Host
+        fortinet.fortisase.network_hosts:
+          state: absent
+          params:
+            primaryKey: "{{ host }}"
   
 
 

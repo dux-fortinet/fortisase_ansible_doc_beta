@@ -86,7 +86,24 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security profile group
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      direction: "outbound-profiles" # outbound-profiles or internal-profiles
+      profile_group: "profile_ansible"
+    tasks:
+      - name: Create/Update security profile group
+        fortinet.fortisase.security_profile_group:
+          params:
+            direction: "{{ direction }}"
+            primaryKey: "{{ profile_group }}"
+      - name: Delete security profile group
+        fortinet.fortisase.security_profile_group:
+          state: absent
+          params:
+            direction: "{{ direction }}"
+            primaryKey: "{{ profile_group }}"
   
 
 

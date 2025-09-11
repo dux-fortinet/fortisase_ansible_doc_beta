@@ -43,7 +43,25 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Network Host Groups
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      host_group: "network_host_group"
+    tasks:
+      - name: Create/Update Network Host Groups
+        fortinet.fortisase.network_host_groups:
+          state: present
+          params:
+            primaryKey: "{{ host_group }}"
+            members:
+              - datasource: "network/hosts"
+                primaryKey: "all"
+      - name: Delete Network Host Groups
+        fortinet.fortisase.network_host_groups:
+          state: absent
+          params:
+            primaryKey: "{{ host_group }}"
   
 
 

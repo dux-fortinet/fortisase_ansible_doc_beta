@@ -45,21 +45,28 @@ Examples
 
 .. code-block:: yaml
 
-  - name: Add/Update Network DNS Rule
+  - name: Network DNS Rule
     hosts: fortisase
     gather_facts: false
+    vars:
+      primaryKey: "1"
     tasks:
-      - name: Add/Update Network DNS Rule
+      - name: Create/Update Network DNS Rule
         fortinet.fortisase.network_dns_rules:
           state: present
           params:
-            primaryKey: "1"
+            primaryKey: "{{ primaryKey }}"
             primaryDns: "1.1.1.1"
             secondaryDns: "1.1.1.2"
             domains:
               - www.facebook.com
               - www.google.com
             popDnsOverride: {}
+      - name: Delete Network DNS Rule
+        fortinet.fortisase.network_dns_rules:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 
