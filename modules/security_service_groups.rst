@@ -44,7 +44,28 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security service group
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      security_service_group: "service_group_example"
+    tasks:
+      - name: Create/Update security service group
+        fortinet.fortisase.security_service_groups:
+          state: present
+          params:
+            primaryKey: "{{ security_service_group }}"
+            proxy: false
+            members:
+              - primaryKey: "HTTP"
+                datasource: "security/services"
+              - primaryKey: "HTTPS"
+                datasource: "security/services"
+      - name: Delete security service group
+        fortinet.fortisase.security_service_groups:
+          state: absent
+          params:
+            primaryKey: "{{ security_service_group }}"
   
 
 

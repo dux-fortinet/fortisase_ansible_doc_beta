@@ -47,19 +47,26 @@ Examples
 
 .. code-block:: yaml
 
-  - name: Add/Update auth users
+  - name: Auth users
     hosts: fortisase
     gather_facts: false
+    vars:
+      primaryKey: "user_example@example.com"
     tasks:
-      - name: Add/Update auth users
+      # - name: Add/Update auth users
+      #   fortinet.fortisase.auth_users:
+      #     state: present
+      #     params:
+      #       primaryKey: "{{ primaryKey }}"  # For SASE authenticated users, name must match email.
+      #       authType: "password"
+      #       password: "example_password"
+      #       email: "{{ primaryKey }}"
+      #       status: "enable"
+      - name: Delete auth users
         fortinet.fortisase.auth_users:
-          state: present
+          state: absent
           params:
-            primaryKey: "user@example.com"  # For SASE authenticated users, name must match email.
-            authType: "password"
-            password: "example_password"
-            email: "user@example.com"
-            status: "enable"
+            primaryKey: "{{ primaryKey }}"
   
 
 

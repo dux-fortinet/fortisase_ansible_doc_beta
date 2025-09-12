@@ -49,17 +49,19 @@ Examples
   - name: Update setting profile
     hosts: fortisase
     gather_facts: false
+    vars:
+      primaryKey: "policy1"
     tasks:
       - name: Create a new endpoint profile, do nothing if the endpoint profile already exists
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primaryKey: "policy1"
+            primaryKey: "{{ primaryKey }}"
             enabled: true
       - name: Update setting profile
         fortinet.fortisase.endpoint_setting_profiles:
           params:
-            primaryKey: "policy1"
+            primaryKey: "{{ primaryKey }}"
             notifyVpnIssue: "enable"
             showNotifications: "enable"
             showTagFortiClient: "disable"

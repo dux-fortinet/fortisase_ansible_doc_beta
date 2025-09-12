@@ -41,21 +41,23 @@ Examples
 
 .. code-block:: yaml
 
-  - name: Create/Update ztna tag
+  - name: Ztna tag
     hosts: fortisase
     gather_facts: false
+    vars:
+      tag: "tag_example"
     tasks:
       - name: Create/Update ztna tag
         fortinet.fortisase.endpoint_ztna_tags:
           state: present
           params:
-            primaryKey: "tag1"
-            name: "tag1"
+            primaryKey: "{{ tag }}"
+            name: "{{ tag }}"
       - name: Delete ztna tag
         fortinet.fortisase.endpoint_ztna_tags:
           state: absent
           params:
-            primaryKey: "tag1"
+            primaryKey: "{{ tag }}"
   
 
 

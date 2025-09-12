@@ -46,7 +46,28 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Endpoint group invitation codes
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "group1"
+    tasks:
+      - name: Create/Update endpoint group invitation codes
+        fortinet.fortisase.endpoint_group_invitation_codes:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            expireDate: "2026-03-08T12:45:30Z"
+            groupAssignment:
+              enabled: true
+              group:
+                id: "1"
+                path: "All Groups"
+      - name: Delete endpoint group invitation codes
+        fortinet.fortisase.endpoint_group_invitation_codes:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

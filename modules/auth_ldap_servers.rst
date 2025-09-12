@@ -63,7 +63,37 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Auth LDAP Server
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "ldap_server_example"
+    tasks:
+      - name: Create/Update Auth LDAP Server
+        fortinet.fortisase.auth_ldap_servers:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            server: "1.1.1.1"
+            port: 1111
+            cnid: "test"
+            dn: "cn=admin,dc=example,dc=com"
+            clientCertAuthEnabled: false
+            bindType: "simple"
+            secureConnection: false
+            serverIdentityCheckEnabled: true
+            advancedGroupMatchingEnabled: true
+            groupMemberCheck: "user-attr"
+            groupFilter: "cn=group,dc=example,dc=com"
+            groupSearchBase: "dc=example,dc=com"
+            certificate:
+              primaryKey: "certificate"
+              datasource: "system/certificate/ca-certificates"
+      - name: Delete Auth LDAP Server
+        fortinet.fortisase.auth_ldap_servers:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

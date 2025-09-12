@@ -66,7 +66,28 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security service
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "service_example"
+    tasks:
+      - name: Create/Update security service
+        fortinet.fortisase.security_services:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            proxy: false
+            category: "Email"
+            protocol: "TCP/UDP/SCTP"
+            tcpPortrange:
+              - destination:
+                  low: 25
+      - name: Delete security service
+        fortinet.fortisase.security_services:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

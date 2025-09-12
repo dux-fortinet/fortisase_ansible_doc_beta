@@ -46,7 +46,26 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Auth Radius Server
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "radius_server_example"
+    tasks:
+      - name: Create/Update Auth Radius Server
+        fortinet.fortisase.auth_radius_servers:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            primarySecret: "radius"
+            primaryServer: "2.3.4.5"
+            authType: "auto"
+            includedInDefaultUserGroup: false
+      - name: Delete Auth Radius Server
+        fortinet.fortisase.auth_radius_servers:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

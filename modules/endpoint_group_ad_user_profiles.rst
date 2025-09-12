@@ -45,17 +45,19 @@ Examples
   - name: Update group ad user profile
     hosts: fortisase
     gather_facts: false
+    vars:
+      primaryKey: "policy1"
     tasks:
       - name: Create a new endpoint profile, do nothing if the endpoint profile already exists
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primaryKey: "policy1"
+            primaryKey: "{{ primaryKey }}"
             enabled: true
       - name: Update group ad user profile
         fortinet.fortisase.endpoint_group_ad_user_profiles:
           params:
-            primaryKey: "policy1"
+            primaryKey: "{{ primaryKey }}"
             adUserIds: []
             groupIds: []
   

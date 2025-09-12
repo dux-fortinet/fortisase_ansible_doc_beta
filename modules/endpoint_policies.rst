@@ -42,16 +42,23 @@ Examples
 
 .. code-block:: yaml
 
-  - name: Add/Update endpoint profile
+  - name: Endpoint profile
     hosts: fortisase
     gather_facts: false
+    vars:
+      primaryKey: "policy1"
     tasks:
-      - name: Add/Update endpoint profile
+      - name: Create/Update endpoint profile
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primaryKey: "policy1"
+            primaryKey: "{{ primaryKey }}"
             enabled: true
+      - name: Delete endpoint profile
+        fortinet.fortisase.endpoint_policies:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

@@ -59,35 +59,45 @@ Examples
 
 .. code-block:: yaml
 
-  - name: Update ztna rule
+  - name: Ztna rule
     hosts: fortisase
     gather_facts: false
+    vars:
+      policy: "policy1"
+      tag: "tag_example"
+      rule_name: "rule_example"
     tasks:
       - name: Create a new endpoint profile, do nothing if the endpoint profile already exists
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primaryKey: "policy1"
+            primaryKey: "{{ policy }}"
             enabled: true
       - name: Create/Update ztna tag, do nothing if the ztna tag already exists
         fortinet.fortisase.endpoint_ztna_tags:
           state: present
           params:
-            primaryKey: "tag1"
-            name: "tag1"
-      - name: Update ztna rule
+            primaryKey: "{{ tag }}"
+            name: "{{ tag }}"
+      - name: Create/Update ztna rule
         fortinet.fortisase.endpoint_ztna_rules:
+          state: present
           params:
-            primaryKey: "policy1"
+            primaryKey: "{{ rule_name }}"
             status: "enable" # "enable" or "disable"
             tag:
-              primaryKey: "tag1"
+              primaryKey: "{{ tag }}"
               datasource: "endpoint/ztna-tags"
             comments: "example comment"
             rules:
               - os: "windows" # "windows", "macos", "linux", "ios", "android"
                 type: "anti-virus"
                 content: "AV Software is installed and running"
+      - name: Delete ztna rule
+        fortinet.fortisase.endpoint_ztna_rules:
+          state: absent
+          params:
+            primaryKey: "{{ rule_name }}"
   
 
 
