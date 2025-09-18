@@ -53,15 +53,31 @@ Examples
         fortinet.fortisase.private_access_network_configuration:
           state: present
           params:
-            as_number: "65001"
-            bgp_design: "overlay"
-            bgp_router_ids_subnet: "10.10.10.0/24"
-            recursive_next_hop: true
+            bgp_design: "loopback"
+            bgp_router_ids_subnet: "172.1.0.0/24"
+            as_number: "65400"
             sdwan_rule_enable: true
-            sdwan_health_check_vm: "10.10.10.1"
-      - name: Delete Private Access Network Configuration
-        fortinet.fortisase.private_access_network_configuration:
-          state: absent
+            sdwan_health_check_vm: "10.255.255.100"
+            recursive_next_hop: true
+      - name: Wait until the resource config_state is success
+        fortinet.fortisase.fortisase_facts:
+          selector: "private_access_network_configuration"
+        register: result
+        until: result.response.config_state == "success"
+        retries: 15
+        delay: 10
+  
+      # - name: Delete Private Access Network Configuration
+      #   fortinet.fortisase.private_access_network_configuration:
+      #     state: absent
+      #     params: {}
+      # - name: Wait until can't get the resource (result is empty)
+      #   fortinet.fortisase.fortisase_facts:
+      #     selector: "private_access_network_configuration"
+      #   register: result
+      #   until: result.response == {}
+      #   retries: 15
+      #   delay: 10
   
 
 

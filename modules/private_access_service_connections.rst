@@ -29,7 +29,8 @@ Parameters
  <li><span class="li-head">state</span> The state of the module. "present" means create or update the resource, "absent" means delete the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['present', 'absent']</span><span class="li-normal">default: present</span></li>
  <li><span class="li-head">force_behavior</span> Specify this option to force the method to use to interact with the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['none', 'read', 'create', 'update', 'delete']</span><span class="li-normal">default: none</span></li>
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
- <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">alias</span> alias for serivce connection<span class="li-normal">type: str</span></li>
+ <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">service_connection_id</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
+ <li><span class="li-head">alias</span> alias for serivce connection<span class="li-normal">type: str</span></li>
  <li><span class="li-head">bgp_peer_ip</span> BGP Routing Peer IP.<span class="li-normal">type: str</span></li>
  <li><span class="li-head">ipsec_remote_gw</span> IPSEC Remote Gateway IP<span class="li-normal">type: str</span></li>
  <li><span class="li-head">overlay_network_id</span> integer id for overlay<span class="li-normal">type: str</span></li>
@@ -68,10 +69,30 @@ Examples
     hosts: fortisase
     gather_facts: false
     tasks:
-      - name: Create/Update Private Access Service Connections
+      # !!!! private_access_network_configuration has to be created first
+      # - name: Create/Update Private Access Network Configuration
+      #   fortinet.fortisase.private_access_network_configuration:
+      #     state: present
+      #     params:
+      #       bgp_design: "loopback"
+      #       bgp_router_ids_subnet: "172.1.0.0/24"
+      #       as_number: "65400"
+      #       sdwan_rule_enable: true
+      #       sdwan_health_check_vm: "10.255.255.100"
+      #       recursive_next_hop: true
+      # - name: Wait until the resource config_state is success
+      #   fortinet.fortisase.fortisase_facts:
+      #     selector: "private_access_network_configuration"
+      #   register: result
+      #   until: result.response.config_state == "success"
+      #   retries: 15
+      #   delay: 10
+    
+      - name: Create Private Access Service Connections
         fortinet.fortisase.private_access_service_connections:
           state: present
           params:
+            service_connection_id: "placeholder, not in use in create"
             type: "loopback"
             alias: "AWS-Ireland-Primary"
             ipsec_remote_gw: "1.1.1.1"
@@ -81,11 +102,51 @@ Examples
             route_map_tag: "100"
             bgp_peer_ip: "10.255.255.100"
             overlay_network_id: "100"
-      # - name: Delete Private Access Service Connections
-      #   fortinet.fortisase.private_access_service_connections:
-      #     state: absent
-      #     params:
-      #       primaryKey: "{{ primaryKey }}"
+        register: create_result
+      - name: Wait until the resource config_state is success
+        fortinet.fortisase.fortisase_facts:
+          selector: "private_access_service_connections"
+          params:
+            service_connection_id: "{{ create_result.response.id }}"
+        register: result
+        until: result.response.config_state == "success" or result.response.config_state == "failed"
+        retries: 15
+        delay: 10
+        failed_when: result.response.config_state != "success"
+  
+      - name: Update Private Access Service Connections
+        fortinet.fortisase.private_access_service_connections:
+          state: present
+          params:
+            service_connection_id: "{{ create_result.response.id }}"
+            ipsec_remote_gw: "1.1.1.2"
+        register: update_result
+      - name: Wait until the resource config_state is success
+        fortinet.fortisase.fortisase_facts:
+          selector: "private_access_service_connections"
+          params:
+            service_connection_id: "{{ update_result.response.id }}"
+        register: result
+        until: result.response.config_state == "success" or result.response.config_state == "failed"
+        retries: 15
+        delay: 10
+        failed_when: result.response.config_state != "success"
+  
+  
+      - name: Delete Private Access Service Connections
+        fortinet.fortisase.private_access_service_connections:
+          state: absent
+          params:
+            service_connection_id: "{{ create_result.response.id }}"
+      - name: Wait until return error 403
+        fortinet.fortisase.fortisase_facts:
+          selector: "private_access_service_connections"
+          params:
+            service_connection_id: "{{ create_result.response.id }}"
+        register: result
+        until: result.response.code == 403
+        retries: 15
+        delay: 10
   
 
 
