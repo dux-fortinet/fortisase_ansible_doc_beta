@@ -44,7 +44,27 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security Certificate Local Certificates
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "asbcerts"
+    tasks:
+      - name: Create/Update Security Certificate Local Certificates
+        fortinet.fortisase.security_cert_local_certs:
+          state: present
+          params:
+            format: "regular"
+            primaryKey: "{{ primaryKey }}"
+            certName:  "{{ primaryKey }}"
+            password: "fortinet"
+            fileContent: "{{ lookup('file', 'server_cert.pem') | b64encode }}"
+            keyFileContent: "{{ lookup('file', 'server_key.pem') | b64encode }}"
+      - name: Delete Security Certificate Local Certificates
+        fortinet.fortisase.security_cert_local_certs:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

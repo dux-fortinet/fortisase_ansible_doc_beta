@@ -49,7 +49,31 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Auth User Groups
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "example_group"
+    tasks:
+      - name: Create/Update Auth User Groups
+        fortinet.fortisase.auth_user_groups:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            groupType: "firewall"
+            localUsers:
+              - primaryKey: "example_user@example.com"
+                datasource: "auth/users"
+            remoteUserGroups:
+              - server:
+                  primaryKey: "example_ldap_server"
+                  datasource: "auth/ldap-servers"
+                matches: ["example_group"]
+      - name: Delete Auth User Groups
+        fortinet.fortisase.auth_user_groups:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

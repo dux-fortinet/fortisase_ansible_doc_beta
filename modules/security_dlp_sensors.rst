@@ -48,7 +48,30 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security DLP Sensors
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "asbsensors"
+    tasks:
+      - name: Create/Update Security DLP Sensors
+        fortinet.fortisase.security_dlp_sensors:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            entryMatchesToTriggerSensor: "all"
+            sensorDictionaries:
+              - dictionaryId: 1
+                dictionary:
+                  primaryKey: "gui_dlp_dictionary"
+                  datasource: "security/dlp-dictionaries"
+                dictionaryMatchesToConsiderRisk: 255
+                status: "enable"
+      - name: Delete Security DLP Sensors
+        fortinet.fortisase.security_dlp_sensors:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

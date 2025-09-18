@@ -51,7 +51,24 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security Application Custom Signatures
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "asbsignatures"
+    tasks:
+      - name: Create/Update Security Application Custom Signatures
+        fortinet.fortisase.security_app_custom_signatures:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            signature: "{{ lookup('file', 'signature.txt') }}"
+            tag: "customsignature_example"
+      - name: Delete Security Application Custom Signatures
+        fortinet.fortisase.security_app_custom_signatures:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

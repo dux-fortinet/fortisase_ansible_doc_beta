@@ -53,7 +53,35 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security DLP Exact Data Matches
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "asbmatches"
+    tasks:
+      - name: Create/Update Security DLP Exact Data Matches
+        fortinet.fortisase.security_dlp_exact_data_matches:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            externalResourceData:
+              resource: "https://example-resource.com"
+              username: "admin"
+              password: "password123"
+              refreshRate: 3600
+              updateMethod: "feed"
+            optionalCount: 0
+            columns:
+              - index: 1
+                optional: false
+                type:
+                  datasource: "security/dlp-data-types"
+                  primaryKey: "credit-card"
+      - name: Delete Security DLP Exact Data Matches
+        fortinet.fortisase.security_dlp_exact_data_matches:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

@@ -47,7 +47,28 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security URL Threat Feeds
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "asbfeeds"
+    tasks:
+      - name: Create/Update Security URL Threat Feeds
+        fortinet.fortisase.security_url_threat_feeds:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            refreshRate: 10
+            status: "enable"
+            uri: "https://www.virustotal.com/api/v3/domains/example.com/threat-feed"
+            basicAuthentication: "enable"
+            username: "fortinet"
+            password: "fortinet"
+      - name: Delete Security URL Threat Feeds
+        fortinet.fortisase.security_url_threat_feeds:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

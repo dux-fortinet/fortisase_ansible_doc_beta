@@ -54,7 +54,27 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Infrastructure SSIDs
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "example"
+    tasks:
+      - name: Create/Update Infrastructure SSIDs
+        fortinet.fortisase.infra_ssids:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            broadcastSsid: "enable"
+            securityMode: "wpa2-only-personal"
+            preSharedKey: "1234567890"
+            wifiSsid: "wifi_ssid_example"
+            clientLimit: 101
+      - name: Delete Infrastructure SSIDs
+        fortinet.fortisase.infra_ssids:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

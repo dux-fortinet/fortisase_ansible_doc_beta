@@ -57,7 +57,40 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security DLP Fingerprint Databases
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "asbdatabases"
+    tasks:
+      - name: sleep
+        pause:
+          seconds: 10
+      - name: Create/Update Security DLP Fingerprint Databases
+        fortinet.fortisase.security_dlp_fingerprint_databases:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            server: "example-server.com"
+            sensitivity: "Warning"
+            includeSubdirectories: "enable"
+            serverDirectory: "/path/to/directory/"
+            filePattern: "*.txt"
+            schedule:
+              period: "daily"
+              syncHour: 2
+              syncMinute: 0
+            removeDeletedFileFingerprints: "enable"
+            keepModified: "enable"
+            scanOnCreation: "enable"
+            authentication:
+              username: "admin"
+              password: "password123"
+      - name: Delete Security DLP Fingerprint Databases
+        fortinet.fortisase.security_dlp_fingerprint_databases:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

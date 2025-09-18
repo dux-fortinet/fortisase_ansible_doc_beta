@@ -41,7 +41,24 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security Certificate Remote CA Certificates
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "asbcerts"
+    tasks:
+      - name: Create/Update Security Certificate Remote CA Certificates
+        fortinet.fortisase.security_cert_remote_ca_certs:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            certName: "{{ primaryKey }}"
+            fileContent: "{{ lookup('file', 'cert2.crt') | b64encode }}"
+      - name: Delete Security Certificate Remote CA Certificates
+        fortinet.fortisase.security_cert_remote_ca_certs:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

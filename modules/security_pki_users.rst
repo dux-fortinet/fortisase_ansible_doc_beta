@@ -43,7 +43,24 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security PKI Users
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "asbusers"
+    tasks:
+      - name: Create/Update Security PKI Users
+        fortinet.fortisase.security_pki_users:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            ca:
+              name: "Fortinet_CA"
+      - name: Delete Security PKI Users
+        fortinet.fortisase.security_pki_users:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

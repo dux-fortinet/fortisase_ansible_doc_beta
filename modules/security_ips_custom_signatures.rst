@@ -53,7 +53,23 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security IPS Custom Signatures
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "asbsignatures"
+    tasks:
+      - name: Create/Update Security IPS Custom Signatures
+        fortinet.fortisase.security_ips_custom_signatures:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            signature: "{{ lookup('file', 'signature.txt') }}"
+      - name: Delete Security IPS Custom Signatures
+        fortinet.fortisase.security_ips_custom_signatures:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

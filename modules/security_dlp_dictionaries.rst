@@ -51,7 +51,31 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security DLP Dictionaries
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "asbdictionaries"
+    tasks:
+      - name: Create/Update Security DLP Dictionaries
+        fortinet.fortisase.security_dlp_dictionaries:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            dictionaryType: "sensor"
+            entriesToEvaluate: "all"
+            entries:
+              - dlpDataType:
+                  primaryKey: "regex"
+                  datasource: "security/dlp-data-types"
+                pattern: "string"
+                status: "enable"
+                repeat: "enable"
+      - name: Delete Security DLP Dictionaries
+        fortinet.fortisase.security_dlp_dictionaries:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

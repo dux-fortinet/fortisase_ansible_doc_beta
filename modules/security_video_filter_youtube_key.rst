@@ -41,7 +41,18 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security Video Filter YouTube Key
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "$sase-global"
+    tasks:
+      - name: Update Security Video Filter YouTube Key
+        fortinet.fortisase.security_video_filter_youtube_key:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            apiKey: "YOUR_API_KEY"
   
 
 
