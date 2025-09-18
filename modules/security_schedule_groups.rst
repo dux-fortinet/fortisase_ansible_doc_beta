@@ -1,5 +1,5 @@
-security_cert_local_certs - Certificate Resource
-++++++++++++++++++++++++++++++++++++++++++++++++
+security_schedule_groups - Schedule Group Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,9 +9,9 @@ security_cert_local_certs - Certificate Resource
 
 Synopsis
 --------
-Certificate Resource.
+Schedule Group Resource.
 
-Use API "/resource-api/v1/security/cert/local-certs".
+Use API "/resource-api/v2/security/schedule-groups".
 
 Requirements
 ------------
@@ -29,11 +29,10 @@ Parameters
  <li><span class="li-head">state</span> The state of the module. "present" means create or update the resource, "absent" means delete the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['present', 'absent']</span><span class="li-normal">default: present</span></li>
  <li><span class="li-head">force_behavior</span> Specify this option to force the method to use to interact with the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['none', 'read', 'create', 'update', 'delete']</span><span class="li-normal">default: none</span></li>
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
- <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">format</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">certName</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">password</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">fileContent</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">keyFileContent</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
+ <li><span class="li-head">members</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['security/onetime-schedules', 'security/recurring-schedules']</span></li>
+ </ul></li>
  </ul></li>
  </ul>
 

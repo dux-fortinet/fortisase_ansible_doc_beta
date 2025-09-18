@@ -33,9 +33,6 @@ Parameters
  <li><span class="li-head">subject</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">ca</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">name</span> CA Cert Name<span class="li-normal">type: str</span></li>
  </ul></li>
- <li><span class="li-head">isStaticObject</span> <span class="li-normal">type: bool</span><span class="li-normal">choices: ['false', 'true']</span></li>
- <li><span class="li-head">references</span> <span class="li-normal">type: int</span></li>
- <li><span class="li-head">isGlobalEntry</span> <span class="li-normal">type: bool</span><span class="li-normal">choices: ['false', 'true']</span></li>
  </ul></li>
  </ul>
 

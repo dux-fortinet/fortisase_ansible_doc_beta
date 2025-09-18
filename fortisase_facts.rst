@@ -38,6 +38,132 @@ Parameters
  <tbody>
  
  <tr>
+ <td>endpoints_access_proxy</td>
+ <td></td>
+ <td>/monitor-api/v1/endpoints/access-proxy</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_client_user_details</td>
+ <td>clientUserId</td>
+ <td>/monitor-api/v1/endpoints/client-user-details/{clientUserId}</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_details</td>
+ <td>deviceId</td>
+ <td>/monitor-api/v1/endpoints/details/{deviceId}</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_donut</td>
+ <td>donutType</td>
+ <td>/monitor-api/v1/endpoints/donut/{donutType}</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_endpoints_with_software</td>
+ <td>softwareId</td>
+ <td>/monitor-api/v1/endpoints/endpoints-with-software/{softwareId}</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_groups</td>
+ <td>primaryKey</td>
+ <td>/monitor-api/v1/endpoints/groups/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_software</td>
+ <td></td>
+ <td>/monitor-api/v1/endpoints/software</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_software_on_client_user</td>
+ <td>clientUserId</td>
+ <td>/monitor-api/v1/endpoints/software-on-client-user/{clientUserId}</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_software_on_endpoint</td>
+ <td>deviceId</td>
+ <td>/monitor-api/v1/endpoints/software-on-endpoint/{deviceId}</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_uid_tags</td>
+ <td></td>
+ <td>/monitor-api/v1/endpoints/uid-tags</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_users</td>
+ <td></td>
+ <td>/monitor-api/v1/endpoints/users</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_vulnerabilities</td>
+ <td></td>
+ <td>/monitor-api/v1/endpoints/vulnerabilities</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_vulnerabilities_endpoints</td>
+ <td>vulnerabilityId</td>
+ <td>/monitor-api/v1/endpoints/vulnerabilities/{vulnerabilityId}/endpoints</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_ztna_count</td>
+ <td></td>
+ <td>/monitor-api/v1/endpoints/ztna-count</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoints_ztna_tags</td>
+ <td></td>
+ <td>/monitor-api/v1/endpoints/ztna-tags</td>
+ </tr>
+ 
+ <tr>
+ <td>security_botnet_domains</td>
+ <td></td>
+ <td>/monitor-api/v1/security/botnet-domains</td>
+ </tr>
+ 
+ <tr>
+ <td>security_botnet_domains_stat</td>
+ <td></td>
+ <td>/monitor-api/v1/security/botnet-domains/stat</td>
+ </tr>
+ 
+ <tr>
+ <td>traffic_history</td>
+ <td></td>
+ <td>/monitor-api/v1/traffic-history</td>
+ </tr>
+ 
+ <tr>
+ <td>traffic_history_vpn_connections</td>
+ <td></td>
+ <td>/monitor-api/v1/traffic-history/vpn-connections</td>
+ </tr>
+ 
+ <tr>
+ <td>user_swg_sessions</td>
+ <td></td>
+ <td>/monitor-api/v1/user/swg/sessions</td>
+ </tr>
+ 
+ <tr>
+ <td>user_vpn_sessions</td>
+ <td></td>
+ <td>/monitor-api/v1/user/vpn/sessions</td>
+ </tr>
+ 
+ <tr>
  <td>auth_fsso_agents</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/auth/fsso-agents/{primaryKey}</td>
@@ -80,9 +206,27 @@ Parameters
  </tr>
  
  <tr>
+ <td>dem_custom_saas_apps</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/dem/custom-saas-apps/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>dem_spa_applications</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/dem/spa-applications/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
  <td>endpoint_connection_profiles</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/endpoint/connection-profiles/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoint_fsso_profiles</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/endpoint/fsso-profiles/{primaryKey}</td>
  </tr>
  
  <tr>
@@ -119,6 +263,12 @@ Parameters
  <td>endpoint_setting_profiles</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/endpoint/setting-profiles/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>endpoint_ztna_profiles</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/endpoint/ztna-profiles/{primaryKey}</td>
  </tr>
  
  <tr>
@@ -179,6 +329,12 @@ Parameters
  <td>network_implicit_dns_rules</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/network/implicit-dns-rules/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>network_internet_services</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/network/internet-services/{primaryKey}</td>
  </tr>
  
  <tr>
@@ -302,6 +458,12 @@ Parameters
  </tr>
  
  <tr>
+ <td>security_endpoint_to_endpoint_policies</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/security/endpoint-to-endpoint-policies/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
  <td>security_file_filter_profile</td>
  <td>direction, primaryKey</td>
  <td>/resource-api/v2/security/file-filter-profile/{direction}/{primaryKey}</td>
@@ -332,6 +494,18 @@ Parameters
  </tr>
  
  <tr>
+ <td>security_internal_policies</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/security/internal-policies/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_internal_reverse_policies</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/security/internal-reverse-policies/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
  <td>security_ip_threat_feeds</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/security/ip-threat-feeds/{primaryKey}</td>
@@ -356,6 +530,18 @@ Parameters
  </tr>
  
  <tr>
+ <td>security_onetime_schedules</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/security/onetime-schedules/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_outbound_policies</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/security/outbound-policies/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
  <td>security_profile_group</td>
  <td>direction, primaryKey</td>
  <td>/resource-api/v2/security/profile-group/{direction}/{primaryKey}</td>
@@ -365,6 +551,18 @@ Parameters
  <td>security_profile_groups</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/security/profile-groups/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_recurring_schedules</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/security/recurring-schedules/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>security_schedule_groups</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/security/schedule-groups/{primaryKey}</td>
  </tr>
  
  <tr>
@@ -530,9 +728,27 @@ Parameters
  </tr>
  
  <tr>
+ <td>usage_security_endpoint_to_endpoint_policies</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/usage/security/endpoint-to-endpoint-policies/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
  <td>usage_security_fortiguard_local_categories</td>
  <td>primaryKey</td>
  <td>/resource-api/v2/usage/security/fortiguard-local-categories/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>usage_security_internal_policies</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/usage/security/internal-policies/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>usage_security_internal_reverse_policies</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/usage/security/internal-reverse-policies/{primaryKey}</td>
  </tr>
  
  <tr>
@@ -548,9 +764,33 @@ Parameters
  </tr>
  
  <tr>
+ <td>usage_security_onetime_schedules</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/usage/security/onetime-schedules/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>usage_security_outbound_policies</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/usage/security/outbound-policies/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
  <td>usage_security_profile_group</td>
  <td>direction, primaryKey</td>
  <td>/resource-api/v2/usage/security/profile-group/{direction}/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>usage_security_recurring_schedules</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/usage/security/recurring-schedules/{primaryKey}</td>
+ </tr>
+ 
+ <tr>
+ <td>usage_security_schedule_groups</td>
+ <td>primaryKey</td>
+ <td>/resource-api/v2/usage/security/schedule-groups/{primaryKey}</td>
  </tr>
  
  <tr>
@@ -599,126 +839,6 @@ Parameters
  <td>security_pki_users</td>
  <td>primaryKey</td>
  <td>/resource-api/v1/security/pki-users/{primaryKey}</td>
- </tr>
- 
- <tr>
- <td>endpoints_access_proxy</td>
- <td></td>
- <td>/monitor-api/v1/endpoints/access-proxy</td>
- </tr>
- 
- <tr>
- <td>endpoints_client_user_details</td>
- <td>clientUserId</td>
- <td>/monitor-api/v1/endpoints/client-user-details/{clientUserId}</td>
- </tr>
- 
- <tr>
- <td>endpoints_details</td>
- <td>deviceId</td>
- <td>/monitor-api/v1/endpoints/details/{deviceId}</td>
- </tr>
- 
- <tr>
- <td>endpoints_donut</td>
- <td>donutType</td>
- <td>/monitor-api/v1/endpoints/donut/{donutType}</td>
- </tr>
- 
- <tr>
- <td>endpoints_endpoints_with_software</td>
- <td>softwareId</td>
- <td>/monitor-api/v1/endpoints/endpoints-with-software/{softwareId}</td>
- </tr>
- 
- <tr>
- <td>endpoints_software</td>
- <td></td>
- <td>/monitor-api/v1/endpoints/software</td>
- </tr>
- 
- <tr>
- <td>endpoints_software_on_client_user</td>
- <td>clientUserId</td>
- <td>/monitor-api/v1/endpoints/software-on-client-user/{clientUserId}</td>
- </tr>
- 
- <tr>
- <td>endpoints_software_on_endpoint</td>
- <td>deviceId</td>
- <td>/monitor-api/v1/endpoints/software-on-endpoint/{deviceId}</td>
- </tr>
- 
- <tr>
- <td>endpoints_uid_tags</td>
- <td></td>
- <td>/monitor-api/v1/endpoints/uid-tags</td>
- </tr>
- 
- <tr>
- <td>endpoints_users</td>
- <td></td>
- <td>/monitor-api/v1/endpoints/users</td>
- </tr>
- 
- <tr>
- <td>endpoints_vulnerabilities</td>
- <td></td>
- <td>/monitor-api/v1/endpoints/vulnerabilities</td>
- </tr>
- 
- <tr>
- <td>endpoints_vulnerabilities_endpoints</td>
- <td>vulnerabilityId</td>
- <td>/monitor-api/v1/endpoints/vulnerabilities/{vulnerabilityId}/endpoints</td>
- </tr>
- 
- <tr>
- <td>endpoints_ztna_count</td>
- <td></td>
- <td>/monitor-api/v1/endpoints/ztna-count</td>
- </tr>
- 
- <tr>
- <td>endpoints_ztna_tags</td>
- <td></td>
- <td>/monitor-api/v1/endpoints/ztna-tags</td>
- </tr>
- 
- <tr>
- <td>security_botnet_domains</td>
- <td></td>
- <td>/monitor-api/v1/security/botnet-domains</td>
- </tr>
- 
- <tr>
- <td>security_botnet_domains_stat</td>
- <td></td>
- <td>/monitor-api/v1/security/botnet-domains/stat</td>
- </tr>
- 
- <tr>
- <td>traffic_history</td>
- <td></td>
- <td>/monitor-api/v1/traffic-history</td>
- </tr>
- 
- <tr>
- <td>traffic_history_vpn_connections</td>
- <td></td>
- <td>/monitor-api/v1/traffic-history/vpn-connections</td>
- </tr>
- 
- <tr>
- <td>user_swg_sessions</td>
- <td></td>
- <td>/monitor-api/v1/user/swg/sessions</td>
- </tr>
- 
- <tr>
- <td>user_vpn_sessions</td>
- <td></td>
- <td>/monitor-api/v1/user/vpn/sessions</td>
  </tr>
  
  </tbody>

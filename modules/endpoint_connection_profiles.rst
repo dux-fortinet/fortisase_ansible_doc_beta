@@ -71,6 +71,11 @@ Parameters
  <li><span class="li-head">authBeforeUserLogon</span> <span class="li-normal">type: bool</span></li>
  <li><span class="li-head">secureInternetAccess</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">authenticateWithSSO</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
  <li><span class="li-head">enableLocalLan</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
+ <li><span class="li-head">failoverSequence</span> <span class="li-normal">type: list</span><span class="li-normal">elements: str</span></li>
+ <li><span class="li-head">postureCheck</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">tag</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">action</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'prohibit']</span></li>
+ <li><span class="li-head">checkFailedMessage</span> <span class="li-normal">type: str</span></li>
+ </ul></li>
  <li><span class="li-head">externalBrowserSamlLogin</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
  </ul></li>
  <li><span class="li-head">preferredDTLSTunnel</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
@@ -92,6 +97,10 @@ Parameters
  <li><span class="li-head">requireCertificate</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
  <li><span class="li-head">authMethod</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['preSharedKey', 'smartCardCert', 'systemStoreCert']</span></li>
  <li><span class="li-head">showPasscode</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
+ <li><span class="li-head">postureCheck</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">tag</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">action</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'prohibit']</span></li>
+ <li><span class="li-head">checkFailedMessage</span> <span class="li-normal">type: str</span></li>
+ </ul></li>
  <li><span class="li-head">preSharedKey</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  <li><span class="li-head">showDisconnectBtn</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>

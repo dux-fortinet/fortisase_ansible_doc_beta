@@ -1,5 +1,5 @@
-security_cert_local_certs - Certificate Resource
-++++++++++++++++++++++++++++++++++++++++++++++++
+dem_custom_saas_apps - DEM Custom SaaS Applications Resource
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.0.0
 
@@ -9,9 +9,9 @@ security_cert_local_certs - Certificate Resource
 
 Synopsis
 --------
-Certificate Resource.
+DEM Custom SaaS Applications Resource.
 
-Use API "/resource-api/v1/security/cert/local-certs".
+Use API "/resource-api/v2/dem/custom-saas-apps".
 
 Requirements
 ------------
@@ -29,11 +29,9 @@ Parameters
  <li><span class="li-head">state</span> The state of the module. "present" means create or update the resource, "absent" means delete the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['present', 'absent']</span><span class="li-normal">default: present</span></li>
  <li><span class="li-head">force_behavior</span> Specify this option to force the method to use to interact with the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['none', 'read', 'create', 'update', 'delete']</span><span class="li-normal">default: none</span></li>
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
- <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">format</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">certName</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">password</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">fileContent</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">keyFileContent</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> The primary key object of the DEM custom SaaS application. Can not be updated once created.<span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
+ <li><span class="li-head">alias</span> <span class="li-normal">type: raw</span></li>
+ <li><span class="li-head">fqdn</span> The FQDN of the custom SaaS application.<span class="li-normal">type: str</span></li>
  </ul></li>
  </ul>
 

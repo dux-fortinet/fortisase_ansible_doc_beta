@@ -45,7 +45,40 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security DLP File Patterns
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      dlp_file_pattern_name: "dlp_file_patterns_example"
+    tasks:
+      # The primaryKey is a digital id, it is "result.response.primaryKey"
+      # Please use the primaryKey in the result to update/delete the target resource
+      - name: Create Security DLP File Patterns
+        fortinet.fortisase.security_dlp_file_patterns:
+          state: present
+          params:
+            primaryKey: "Placeholder, not in use in create"
+            tag: "{{ dlp_file_pattern_name }}"
+            entries:
+              - pattern: "string"
+                filterType: "type"
+                fileType: "7z"
+        register: result
+      - name: Update Security DLP File Patterns
+        fortinet.fortisase.security_dlp_file_patterns:
+          state: present
+          params:
+            primaryKey: "{{ result.response.primaryKey }}"
+            tag: "{{ dlp_file_pattern_name }}"
+            entries:
+              - pattern: "string_modified"
+                filterType: "type"
+                fileType: "7z"
+      - name: Delete Security DLP File Patterns
+        fortinet.fortisase.security_dlp_file_patterns:
+          state: absent
+          params:
+            primaryKey: "{{ result.response.primaryKey }}"
   
 
 

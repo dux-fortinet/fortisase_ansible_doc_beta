@@ -53,16 +53,23 @@ Examples
     vars:
       primaryKey: "user_example@example.com"
     tasks:
-      # - name: Add/Update auth users
-      #   fortinet.fortisase.auth_users:
-      #     state: present
-      #     params:
-      #       primaryKey: "{{ primaryKey }}"  # For SASE authenticated users, name must match email.
-      #       authType: "password"
-      #       password: "example_password"
-      #       email: "{{ primaryKey }}"
-      #       status: "enable"
-      - name: Delete auth users
+      - name: Create auth user
+        fortinet.fortisase.auth_users:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"  # For SASE authenticated users, name must match email.
+            authType: "password"
+            password: "example_password"
+            email: "{{ primaryKey }}"
+            status: "enable"
+      # Only status can be updated, trying to update other parameters will fail
+      - name: Update auth user
+        fortinet.fortisase.auth_users:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            status: "disable"
+      - name: Delete auth user
         fortinet.fortisase.auth_users:
           state: absent
           params:

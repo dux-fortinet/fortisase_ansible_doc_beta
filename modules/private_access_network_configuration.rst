@@ -34,7 +34,6 @@ Parameters
  <li><span class="li-head">recursive_next_hop</span> BGP Recursive Routing. Enabling this setting allows for interhub connectivity. When use BGP design on-loopback this has to be enabled.<span class="li-normal">type: bool</span><span class="li-normal">choices: ['false', 'true']</span></li>
  <li><span class="li-head">sdwan_rule_enable</span> Hub Selection Method. Enabling this setting the highest priority service connection that meets minimum SLA requirements is selected. Otherwise BGP MED (Multi-Exit Discriminator) will be used.<span class="li-normal">type: bool</span><span class="li-normal">choices: ['false', 'true']</span></li>
  <li><span class="li-head">sdwan_health_check_vm</span> Health Check IP. Must be provided when enable sdwan rule which used to obtain Jitter, latency and packet loss measurements.<span class="li-normal">type: str</span></li>
- <li><span class="li-head">config_state</span> Configuration state of network configuration.<span class="li-normal">type: str</span><span class="li-normal">choices: ['creating', 'deleting', 'failed', 'success', 'updating']</span></li>
  <li><span class="li-head">bgp_design</span> BGP Routing Design.<span class="li-normal">type: str</span><span class="li-normal">choices: ['loopback', 'overlay']</span></li>
  </ul></li>
  </ul>
@@ -46,7 +45,23 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Private Access Network Configuration
+    hosts: fortisase
+    gather_facts: false
+    tasks:
+      - name: Create/Update Private Access Network Configuration
+        fortinet.fortisase.private_access_network_configuration:
+          state: present
+          params:
+            as_number: "65001"
+            bgp_design: "overlay"
+            bgp_router_ids_subnet: "10.10.10.0/24"
+            recursive_next_hop: true
+            sdwan_rule_enable: true
+            sdwan_health_check_vm: "10.10.10.1"
+      - name: Delete Private Access Network Configuration
+        fortinet.fortisase.private_access_network_configuration:
+          state: absent
   
 
 

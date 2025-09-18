@@ -45,6 +45,7 @@ Parameters
  <li><span class="li-head">timedOutValidationCertificateAction</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'block']</span></li>
  <li><span class="li-head">validationFailedCertificateAction</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'block']</span></li>
  <li><span class="li-head">certProbeFailure</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['allow', 'block']</span></li>
+ <li><span class="li-head">quic</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['block', 'bypass', 'inspect']</span></li>
  <li><span class="li-head">hostExemptions</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>

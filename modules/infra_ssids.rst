@@ -39,6 +39,11 @@ Parameters
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  <li><span class="li-head">preSharedKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">radiusServer</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
+ </ul></li>
+ <li><span class="li-head">userGroups</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
+ </ul></li>
  </ul></li>
  </ul>
 
