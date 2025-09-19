@@ -61,7 +61,34 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security endpoint to endpoint policies
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "saas_app_ansible"
+    tasks:
+      - name: Create/Update security endpoint to endpoint policies
+        fortinet.fortisase.security_endpoint_to_endpoint_policies:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            enabled: true
+            users:
+              - primaryKey: "gui_test"
+                datasource: "auth/user-groups"
+            services:
+              - primaryKey: "ALL_TCP"
+                datasource: "security/services"
+            action: "accept"
+            logTraffic: "all"
+            schedule:
+              primaryKey: "always"
+              datasource: "security/recurring-schedules"
+      - name: Delete security endpoint to endpoint policies
+        fortinet.fortisase.security_endpoint_to_endpoint_policies:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

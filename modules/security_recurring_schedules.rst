@@ -43,7 +43,31 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security recurring schedules
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "recurring_schedule_ansible"
+    tasks:
+      - name: Create/Update security recurring schedules
+        fortinet.fortisase.security_recurring_schedules:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            days:
+              - "sunday"
+              - "monday"
+              - "tuesday"
+              - "wednesday"
+              - "thursday"
+              - "friday"
+            endTime: "17:00"
+            startTime: "09:01"
+      - name: Delete security recurring schedules
+        fortinet.fortisase.security_recurring_schedules:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

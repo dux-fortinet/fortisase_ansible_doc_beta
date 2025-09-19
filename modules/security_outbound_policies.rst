@@ -66,7 +66,49 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security outbound policies
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "outbound_policy_ansible"
+    tasks:
+      - name: Create/Update security outbound policies
+        fortinet.fortisase.security_outbound_policies:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            enabled: true
+            scope: "vpn-user"
+            users:
+              - primaryKey: "gui_test"
+                datasource: "auth/user-groups"
+            destinations:
+              - primaryKey: "Salesforce-Web"
+                datasource: "network/internet-services"
+              - primaryKey: "SAP-Web"
+                datasource: "network/internet-services"
+            action: "accept"
+            logTraffic: "all"
+            services:
+              - primaryKey: "ALL_TCP"
+                datasource: "security/services"
+            profileGroup:
+              group:
+                primaryKey: "outbound"
+                datasource: "security/profile-groups"
+              forceCertInspection: false
+            sources:
+              - primaryKey: "gui_test"
+                datasource: "endpoint/ztna-tags"
+            schedule:
+              primaryKey: "always"
+              datasource: "security/recurring-schedules"
+            comments: "Secure SaaS Access Policy"
+      - name: Delete security outbound policies
+        fortinet.fortisase.security_outbound_policies:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

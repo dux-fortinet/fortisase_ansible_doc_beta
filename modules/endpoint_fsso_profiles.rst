@@ -45,7 +45,23 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Update fsso profile
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "policy1"
+    tasks:
+      - name: Create a new endpoint profile, do nothing if the endpoint profile already exists
+        fortinet.fortisase.endpoint_policies:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            enabled: true
+      - name: Update fsso profile
+        fortinet.fortisase.endpoint_fsso_profiles:
+          params:
+            primaryKey: "{{ primaryKey }}"
+            port: 443
   
 
 

@@ -87,7 +87,7 @@ Examples
       #   until: result.response.config_state == "success"
       #   retries: 15
       #   delay: 10
-    
+  
       - name: Create Private Access Service Connections
         fortinet.fortisase.private_access_service_connections:
           state: present
@@ -132,21 +132,21 @@ Examples
         delay: 10
         failed_when: result.response.config_state != "success"
   
-  
       - name: Delete Private Access Service Connections
         fortinet.fortisase.private_access_service_connections:
           state: absent
           params:
             service_connection_id: "{{ create_result.response.id }}"
-      - name: Wait until return error 403
+      - name: Wait until return error 403 (deleted successfully)
         fortinet.fortisase.fortisase_facts:
           selector: "private_access_service_connections"
           params:
             service_connection_id: "{{ create_result.response.id }}"
         register: result
-        until: result.response.code == 403
+        until: result.http_code == 403
         retries: 15
         delay: 10
+        failed_when: false  # Never fail, regardless of HTTP 403 error
   
 
 

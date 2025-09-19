@@ -43,7 +43,25 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security schedule groups
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "schedule_group_ansible"
+    tasks:
+      - name: Create/Update security schedule groups
+        fortinet.fortisase.security_schedule_groups:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            members:
+              - datasource: "security/recurring-schedules"
+                primaryKey: "always"
+      - name: Delete security schedule groups
+        fortinet.fortisase.security_schedule_groups:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

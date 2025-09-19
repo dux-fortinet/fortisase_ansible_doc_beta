@@ -42,7 +42,26 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Dem Custom SaaS Apps
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "example.com"
+      fqdn: "example.com"
+      alias: "example.com"
+    tasks:
+      - name: Create/Update Dem Custom SaaS Apps
+        fortinet.fortisase.dem_custom_saas_apps:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            fqdn: "{{ fqdn }}"
+            alias: "{{ alias }}"
+      - name: Delete Dem Custom SaaS Apps
+        fortinet.fortisase.dem_custom_saas_apps:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

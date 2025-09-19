@@ -57,7 +57,36 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Endpoint ZTNA profiles
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "policy1"
+    tasks:
+      - name: Create a new endpoint profile, do nothing if the endpoint profile already exists
+        fortinet.fortisase.endpoint_policies:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            enabled: true
+      - name: Enable endpoint ZTNA profiles
+        fortinet.fortisase.endpoint_ztna_profiles:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            allowAutomaticSignOn: "enable"
+            connectionRules:
+              - id: 1
+                address: "192.168.1.1"
+                uid: "1"
+                gateways: []
+                mask: "255.255.255.0"
+                name: "test"
+                port: "80"
+                encryption: "enable"
+            entraId:
+              applicationId: "0"
+              domainName: "0"
   
 
 

@@ -57,7 +57,7 @@ Examples
           params:
             format: "regular"
             primaryKey: "{{ primaryKey }}"
-            certName:  "{{ primaryKey }}"
+            certName: "{{ primaryKey }}"
             password: "fortinet"
             fileContent: "{{ lookup('file', 'server_cert.pem') | b64encode }}"
             keyFileContent: "{{ lookup('file', 'server_key.pem') | b64encode }}"

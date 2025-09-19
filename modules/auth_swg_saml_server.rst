@@ -59,7 +59,38 @@ Examples
 
 .. code-block:: yaml
 
+  - name: Auth SWG SAML Server
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "$sase-global"
+    tasks:
+      # To configure this resource, please enable proxy configuration.
+      - name: Create/Update Auth SWG SAML Server
+        fortinet.fortisase.auth_swg_saml_server:
+          params:
+            primaryKey: "{{ primaryKey }}"
+            enabled: true
+            digestMethod: "sha256"
+            idpEntityId: "https://sts.windows.net/example/"
+            idpSignOnUrl: "https://login.microsoftonline.com/example/saml2"
+            idpLogOutUrl: "https://login.microsoftonline.com/example/saml2"
+            idpCertificate:
+              primaryKey: "certificate"
+              datasource: "system/certificate/remote-certificates"
+            username: "username"
+            groupName: "group"
+            groupMatch: ""
+            spCert:
+              primaryKey: "FortiSASE Default Certificate"
+              datasource: "system/certificate/local-certificates"
+            scimEnabled: false
   
+      - name: Delete Auth SWG SAML Server
+        fortinet.fortisase.auth_swg_saml_server:
+          params:
+            primaryKey: "{{ primaryKey }}"
+            enabled: false
   
 
 

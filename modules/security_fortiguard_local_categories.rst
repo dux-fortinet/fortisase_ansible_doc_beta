@@ -42,7 +42,24 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security FortiGuard Local Categories
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "asbcategories"
+    tasks:
+      - name: Create/Update Security FortiGuard Local Categories
+        fortinet.fortisase.security_fortiguard_local_categories:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            threatWeight: "low"
+            urls: ["example.com"]
+      - name: Delete Security FortiGuard Local Categories
+        fortinet.fortisase.security_fortiguard_local_categories:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

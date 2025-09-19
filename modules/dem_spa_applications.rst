@@ -47,7 +47,29 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Dem SPA Applications
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "example_name"
+    tasks:
+      - name: Create/Update Dem SPA Applications
+        fortinet.fortisase.dem_spa_applications:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            server: "string"
+            latencyThreshold: 10000000
+            jitterThreshold: 10000000
+            packetlossThreshold: 100
+            interval: 20
+            failTime: 1
+            recoveryTime: 1
+      - name: Delete Dem SPA Applications
+        fortinet.fortisase.dem_spa_applications:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

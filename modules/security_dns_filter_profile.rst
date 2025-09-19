@@ -84,7 +84,7 @@ Examples
           params:
             direction: "{{ direction }}"
             primaryKey: "{{ profile_group }}"
-            useForEdgeDevices: False
+            useForEdgeDevices: false
             allowDnsRequestsOnRatingError: "enable"
             dnsTranslationEntries: []
             domainFilters: []

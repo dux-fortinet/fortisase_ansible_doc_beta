@@ -45,7 +45,22 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Network internet services
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "Google-Web"
+    tasks:
+      - name: Create/Update network internet services
+        fortinet.fortisase.network_internet_services:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+      - name: Delete network internet services
+        fortinet.fortisase.network_internet_services:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

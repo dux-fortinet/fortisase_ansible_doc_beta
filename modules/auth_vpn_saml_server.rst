@@ -58,7 +58,58 @@ Examples
 
 .. code-block:: yaml
 
+  - name: Auth VPN SAML Server
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "$sase-global"
+    tasks:
+      - name: Create/Update Auth VPN SAML Server with full configuration
+        fortinet.fortisase.auth_vpn_saml_server:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            enabled: true
+            digestMethod: "sha256"
+            idpEntityId: "https://sts.windows.net/example/"
+            idpSignOnUrl: "https://login.microsoftonline.com/example/saml1"
+            idpLogOutUrl: "https://login.microsoftonline.com/example/saml1"
+            idpCertificate:
+              primaryKey: "certificate"
+              datasource: "system/certificate/remote-certificates"
+            username: "example_username"
+            groupName: "example_group_name"
+            spCert:
+              primaryKey: "FortiSASE Default Certificate"
+              datasource: "system/certificate/local-certificates"
+            scimEnabled: false
+            groupId: ""
+            entraIdEnabled: false
+      - name: Wait until the resource $meta.state is done
+        fortinet.fortisase.fortisase_facts:
+          selector: "auth_vpn_saml_server"
+          params:
+            primaryKey: "{{ primaryKey }}"
+        register: result
+        until: result.response[0]['$meta'].state == "done"
+        retries: 15
+        delay: 10
+        failed_when: result.response[0]['$meta'].state != "done"
   
+      - name: Delete Auth VPN SAML Server
+        fortinet.fortisase.auth_vpn_saml_server:
+          params:
+            primaryKey: "{{ primaryKey }}"
+            enabled: false
+      - name: Wait until the resource $meta doesn't have state
+        fortinet.fortisase.fortisase_facts:
+          selector: "auth_vpn_saml_server"
+          params:
+            primaryKey: "{{ primaryKey }}"
+        register: result
+        until: result.response[0]['$meta']['state'] is not defined
+        retries: 15
+        delay: 10
   
 
 

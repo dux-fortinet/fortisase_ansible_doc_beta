@@ -125,7 +125,7 @@ Examples
 
 .. code-block:: yaml
 
-  - name: Update connection profile
+  - name: Connection profile
     hosts: fortisase
     gather_facts: false
     vars:
@@ -153,6 +153,11 @@ Examples
               authenticateWithSSO: "disable"
               externalBrowserSamlLogin: "disable"
             useGuiSamlAuth: "disable"
+      - name: Delete connection profile
+        fortinet.fortisase.endpoint_connection_profiles:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

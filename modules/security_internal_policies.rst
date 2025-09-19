@@ -66,7 +66,47 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security internal policies
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "saas_app_ansible2"
+    tasks:
+      - name: Create/Update security internal policies
+        fortinet.fortisase.security_internal_policies:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            enabled: true
+            scope: "vpn-user"
+            users:
+              - primaryKey: "gui_test"
+                datasource: "auth/user-groups"
+            destinations:
+              - primaryKey: "gui_test"
+                datasource: "network/hosts"
+            action: "deny"
+            logTraffic: "all"
+            profileGroup:
+              group:
+                primaryKey: "internal"
+                datasource: "security/profile-groups"
+              forceCertInspection: false
+            sources:
+              - primaryKey: "gui_test"
+                datasource: "endpoint/ztna-tags"
+            schedule:
+              primaryKey: "always"
+              datasource: "security/recurring-schedules"
+            comments: "Secure SaaS Access Policy"
+            services:
+              - primaryKey: "ALL_TCP"
+                datasource: "security/services"
+      - name: Delete security internal policies
+        fortinet.fortisase.security_internal_policies:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 

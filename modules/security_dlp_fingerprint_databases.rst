@@ -63,9 +63,6 @@ Examples
     vars:
       primaryKey: "asbdatabases"
     tasks:
-      - name: sleep
-        pause:
-          seconds: 10
       - name: Create/Update Security DLP Fingerprint Databases
         fortinet.fortisase.security_dlp_fingerprint_databases:
           state: present

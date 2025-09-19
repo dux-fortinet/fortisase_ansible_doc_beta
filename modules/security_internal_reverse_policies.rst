@@ -62,7 +62,43 @@ Examples
 
 .. code-block:: yaml
 
-  
+  - name: Security internal reverse policies
+    hosts: fortisase
+    gather_facts: false
+    vars:
+      primaryKey: "reverse_policy_ansible"
+    tasks:
+      - name: Create/Update security internal reverse policies
+        fortinet.fortisase.security_internal_reverse_policies:
+          state: present
+          params:
+            primaryKey: "{{ primaryKey }}"
+            enabled: true
+            scope: "vpn-user"
+            services:
+              - primaryKey: "SSH"
+                datasource: "security/services"
+              - primaryKey: "RDP"
+                datasource: "security/services"
+            action: "deny"
+            logTraffic: "all"
+            profileGroup:
+              group:
+                primaryKey: "internal"
+                datasource: "security/profile-groups"
+              forceCertInspection: false
+            sources:
+              - primaryKey: "gui_test"
+                datasource: "network/hosts"
+            schedule:
+              primaryKey: "always"
+              datasource: "security/recurring-schedules"
+            comments: "Allow IT Admins remote access to machines of mobile workers"
+      - name: Delete security internal reverse policies
+        fortinet.fortisase.security_internal_reverse_policies:
+          state: absent
+          params:
+            primaryKey: "{{ primaryKey }}"
   
 
 
