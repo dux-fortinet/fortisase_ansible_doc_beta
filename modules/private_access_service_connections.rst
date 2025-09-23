@@ -103,7 +103,7 @@ Examples
             bgp_peer_ip: "10.255.255.100"
             overlay_network_id: "100"
         register: create_result
-      - name: Wait until the resource config_state is success
+      - name: Wait until the resource config_state in create_result is success
         fortinet.fortisase.fortisase_facts:
           selector: "private_access_service_connections"
           params:
@@ -121,7 +121,7 @@ Examples
             service_connection_id: "{{ create_result.response.id }}"
             ipsec_remote_gw: "1.1.1.2"
         register: update_result
-      - name: Wait until the resource config_state is success
+      - name: Wait until the resource config_state in update_result is success
         fortinet.fortisase.fortisase_facts:
           selector: "private_access_service_connections"
           params:
