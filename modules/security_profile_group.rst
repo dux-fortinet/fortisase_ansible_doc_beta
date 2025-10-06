@@ -30,49 +30,49 @@ Parameters
  <li><span class="li-head">force_behavior</span> Specify this option to force the method to use to interact with the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['none', 'read', 'create', 'update', 'delete']</span><span class="li-normal">default: none</span></li>
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
  <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">direction</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
- <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
- <li><span class="li-head">antivirusProfile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
- <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">primary_key</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
+ <li><span class="li-head">antivirus_profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
+ <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  </ul></li>
- <li><span class="li-head">webFilterProfile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
- <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">web_filter_profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
+ <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  </ul></li>
- <li><span class="li-head">videoFilterProfile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
- <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">video_filter_profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
+ <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  </ul></li>
- <li><span class="li-head">dnsFilterProfile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
- <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">dns_filter_profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
+ <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  </ul></li>
- <li><span class="li-head">applicationControlProfile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
- <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">application_control_profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
+ <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  </ul></li>
- <li><span class="li-head">fileFilterProfile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
- <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">file_filter_profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
+ <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  </ul></li>
- <li><span class="li-head">dlpFilterProfile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
- <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">dlp_filter_profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
+ <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  </ul></li>
- <li><span class="li-head">intrusionPreventionProfile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
- <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">intrusion_prevention_profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
+ <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  </ul></li>
- <li><span class="li-head">sslSshProfile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">ssl_ssh_profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">profile</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  </ul></li>

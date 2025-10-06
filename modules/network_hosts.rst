@@ -29,14 +29,14 @@ Parameters
  <li><span class="li-head">state</span> The state of the module. "present" means create or update the resource, "absent" means delete the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['present', 'absent']</span><span class="li-normal">default: present</span></li>
  <li><span class="li-head">force_behavior</span> Specify this option to force the method to use to interact with the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['none', 'read', 'create', 'update', 'delete']</span><span class="li-normal">default: none</span></li>
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
- <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
+ <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
  <li><span class="li-head">type</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['fqdn', 'geography', 'ipmask', 'iprange']</span></li>
  <li><span class="li-head">location</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['external', 'internal', 'private-access', 'unspecified']</span></li>
  <li><span class="li-head">subnet</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">startIp</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">endIp</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">start_ip</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">end_ip</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">fqdn</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">countryId</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">country_id</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  </ul>
 

@@ -29,26 +29,26 @@ Parameters
  <li><span class="li-head">state</span> The state of the module. "present" means create or update the resource, "absent" means delete the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['present', 'absent']</span><span class="li-normal">default: present</span></li>
  <li><span class="li-head">force_behavior</span> Specify this option to force the method to use to interact with the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['none', 'read', 'create', 'update', 'delete']</span><span class="li-normal">default: none</span></li>
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
- <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
+ <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
  <li><span class="li-head">server</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">port</span> <span class="li-normal">type: int</span></li>
  <li><span class="li-head">cnid</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">dn</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">bindType</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['anonymous', 'regular', 'simple']</span></li>
- <li><span class="li-head">secureConnection</span> <span class="li-normal">type: bool</span></li>
- <li><span class="li-head">advancedGroupMatchingEnabled</span> <span class="li-normal">type: bool</span></li>
- <li><span class="li-head">groupMemberCheck</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['group-object', 'posix-group-object', 'user-attr']</span></li>
- <li><span class="li-head">memberAttribute</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">groupFilter</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">groupSearchBase</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">groupObjectFilter</span> <span class="li-normal">type: str</span></li>
- <li><span class="li-head">serverIdentityCheckEnabled</span> <span class="li-normal">type: bool</span></li>
- <li><span class="li-head">passwordRenewalEnabled</span> <span class="li-normal">type: bool</span></li>
- <li><span class="li-head">certificate</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">bind_type</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['anonymous', 'regular', 'simple']</span></li>
+ <li><span class="li-head">secure_connection</span> <span class="li-normal">type: bool</span></li>
+ <li><span class="li-head">advanced_group_matching_enabled</span> <span class="li-normal">type: bool</span></li>
+ <li><span class="li-head">group_member_check</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['group-object', 'posix-group-object', 'user-attr']</span></li>
+ <li><span class="li-head">member_attribute</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">group_filter</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">group_search_base</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">group_object_filter</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">server_identity_check_enabled</span> <span class="li-normal">type: bool</span></li>
+ <li><span class="li-head">password_renewal_enabled</span> <span class="li-normal">type: bool</span></li>
+ <li><span class="li-head">certificate</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>
- <li><span class="li-head">clientCertAuthEnabled</span> <span class="li-normal">type: bool</span></li>
- <li><span class="li-head">clientCert</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primaryKey</span> <span class="li-normal">type: str</span></li>
+ <li><span class="li-head">client_cert_auth_enabled</span> <span class="li-normal">type: bool</span></li>
+ <li><span class="li-head">client_cert</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">datasource</span> <span class="li-normal">type: str</span></li>
  </ul></li>
  <li><span class="li-head">username</span> <span class="li-normal">type: str</span></li>

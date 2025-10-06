@@ -1,4 +1,4 @@
-Welcome to Fortinet FortiSASE Ansible Collection documentation v1.0.0!
+Welcome to Fortinet FortiSASE Ansible Collection documentation v1.1.0!
 ===========================================================================
 
 The FortiSASE Ansible Collection provides Ansible modules for configuring FortiSASE devices.

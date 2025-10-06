@@ -45,32 +45,32 @@ Parameters
  
  <tr>
  <td>endpoints_client_user_details</td>
- <td>clientUserId</td>
- <td>/monitor-api/v1/endpoints/client-user-details/{clientUserId}</td>
+ <td>client_user_id</td>
+ <td>/monitor-api/v1/endpoints/client-user-details/{client_user_id}</td>
  </tr>
  
  <tr>
  <td>endpoints_details</td>
- <td>deviceId</td>
- <td>/monitor-api/v1/endpoints/details/{deviceId}</td>
+ <td>device_id</td>
+ <td>/monitor-api/v1/endpoints/details/{device_id}</td>
  </tr>
  
  <tr>
  <td>endpoints_donut</td>
- <td>donutType</td>
- <td>/monitor-api/v1/endpoints/donut/{donutType}</td>
+ <td>donut_type</td>
+ <td>/monitor-api/v1/endpoints/donut/{donut_type}</td>
  </tr>
  
  <tr>
  <td>endpoints_endpoints_with_software</td>
- <td>softwareId</td>
- <td>/monitor-api/v1/endpoints/endpoints-with-software/{softwareId}</td>
+ <td>software_id</td>
+ <td>/monitor-api/v1/endpoints/endpoints-with-software/{software_id}</td>
  </tr>
  
  <tr>
  <td>endpoints_groups</td>
- <td>primaryKey</td>
- <td>/monitor-api/v1/endpoints/groups/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/monitor-api/v1/endpoints/groups/{primary_key}</td>
  </tr>
  
  <tr>
@@ -81,14 +81,14 @@ Parameters
  
  <tr>
  <td>endpoints_software_on_client_user</td>
- <td>clientUserId</td>
- <td>/monitor-api/v1/endpoints/software-on-client-user/{clientUserId}</td>
+ <td>client_user_id</td>
+ <td>/monitor-api/v1/endpoints/software-on-client-user/{client_user_id}</td>
  </tr>
  
  <tr>
  <td>endpoints_software_on_endpoint</td>
- <td>deviceId</td>
- <td>/monitor-api/v1/endpoints/software-on-endpoint/{deviceId}</td>
+ <td>device_id</td>
+ <td>/monitor-api/v1/endpoints/software-on-endpoint/{device_id}</td>
  </tr>
  
  <tr>
@@ -111,8 +111,8 @@ Parameters
  
  <tr>
  <td>endpoints_vulnerabilities_endpoints</td>
- <td>vulnerabilityId</td>
- <td>/monitor-api/v1/endpoints/vulnerabilities/{vulnerabilityId}/endpoints</td>
+ <td>vulnerability_id</td>
+ <td>/monitor-api/v1/endpoints/vulnerabilities/{vulnerability_id}/endpoints</td>
  </tr>
  
  <tr>
@@ -165,20 +165,20 @@ Parameters
  
  <tr>
  <td>auth_fsso_agents</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/auth/fsso-agents/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/auth/fsso-agents/{primary_key}</td>
  </tr>
  
  <tr>
  <td>auth_ldap_servers</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/auth/ldap-servers/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/auth/ldap-servers/{primary_key}</td>
  </tr>
  
  <tr>
  <td>auth_radius_servers</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/auth/radius-servers/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/auth/radius-servers/{primary_key}</td>
  </tr>
  
  <tr>
@@ -189,14 +189,14 @@ Parameters
  
  <tr>
  <td>auth_user_groups</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/auth/user-groups/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/auth/user-groups/{primary_key}</td>
  </tr>
  
  <tr>
  <td>auth_users</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/auth/users/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/auth/users/{primary_key}</td>
  </tr>
  
  <tr>
@@ -207,152 +207,152 @@ Parameters
  
  <tr>
  <td>dem_custom_saas_apps</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/dem/custom-saas-apps/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/dem/custom-saas-apps/{primary_key}</td>
  </tr>
  
  <tr>
  <td>dem_spa_applications</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/dem/spa-applications/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/dem/spa-applications/{primary_key}</td>
  </tr>
  
  <tr>
  <td>endpoint_connection_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/endpoint/connection-profiles/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/endpoint/connection-profiles/{primary_key}</td>
  </tr>
  
  <tr>
  <td>endpoint_fsso_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/endpoint/fsso-profiles/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/endpoint/fsso-profiles/{primary_key}</td>
  </tr>
  
  <tr>
  <td>endpoint_group_ad_user_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/endpoint/group-ad-user-profiles/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/endpoint/group-ad-user-profiles/{primary_key}</td>
  </tr>
  
  <tr>
  <td>endpoint_group_invitation_codes</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/endpoint/group-invitation-codes/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/endpoint/group-invitation-codes/{primary_key}</td>
  </tr>
  
  <tr>
  <td>endpoint_policies</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/endpoint/policies/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/endpoint/policies/{primary_key}</td>
  </tr>
  
  <tr>
  <td>endpoint_protection_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/endpoint/protection-profiles/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/endpoint/protection-profiles/{primary_key}</td>
  </tr>
  
  <tr>
  <td>endpoint_sandbox_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/endpoint/sandbox-profiles/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/endpoint/sandbox-profiles/{primary_key}</td>
  </tr>
  
  <tr>
  <td>endpoint_setting_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/endpoint/setting-profiles/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/endpoint/setting-profiles/{primary_key}</td>
  </tr>
  
  <tr>
  <td>endpoint_ztna_profiles</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/endpoint/ztna-profiles/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/endpoint/ztna-profiles/{primary_key}</td>
  </tr>
  
  <tr>
  <td>endpoint_ztna_rules</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/endpoint/ztna-rules/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/endpoint/ztna-rules/{primary_key}</td>
  </tr>
  
  <tr>
  <td>endpoint_ztna_tags</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/endpoint/ztna-tags/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/endpoint/ztna-tags/{primary_key}</td>
  </tr>
  
  <tr>
  <td>infra_extenders</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/infra/extenders/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/infra/extenders/{primary_key}</td>
  </tr>
  
  <tr>
  <td>infra_fortigates</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/infra/fortigates/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/infra/fortigates/{primary_key}</td>
  </tr>
  
  <tr>
  <td>infra_ssids</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/infra/ssids/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/infra/ssids/{primary_key}</td>
  </tr>
  
  <tr>
  <td>network_basic_internet_services</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/network/basic-internet-services/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/network/basic-internet-services/{primary_key}</td>
  </tr>
  
  <tr>
  <td>network_dns_rules</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/network/dns-rules/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/network/dns-rules/{primary_key}</td>
  </tr>
  
  <tr>
  <td>network_host_groups</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/network/host-groups/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/network/host-groups/{primary_key}</td>
  </tr>
  
  <tr>
  <td>network_hosts</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/network/hosts/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/network/hosts/{primary_key}</td>
  </tr>
  
  <tr>
  <td>network_implicit_dns_rules</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/network/implicit-dns-rules/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/network/implicit-dns-rules/{primary_key}</td>
  </tr>
  
  <tr>
  <td>network_internet_services</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/network/internet-services/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/network/internet-services/{primary_key}</td>
  </tr>
  
  <tr>
  <td>network_wildcard_fqdn_customs</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/network/wildcard-fqdn-customs/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/network/wildcard-fqdn-customs/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_antivirus_filetypes</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/antivirus-filetypes/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/antivirus-filetypes/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_antivirus_profile</td>
- <td>direction, primaryKey</td>
- <td>/resource-api/v2/security/antivirus-profile/{direction}/{primaryKey}</td>
+ <td>direction, primary_key</td>
+ <td>/resource-api/v2/security/antivirus-profile/{direction}/{primary_key}</td>
  </tr>
  
  <tr>
@@ -363,20 +363,20 @@ Parameters
  
  <tr>
  <td>security_app_custom_signatures</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/app-custom-signatures/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/app-custom-signatures/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_application_categories</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/application-categories/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/application-categories/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_application_control_profile</td>
- <td>direction, primaryKey</td>
- <td>/resource-api/v2/security/application-control-profile/{direction}/{primaryKey}</td>
+ <td>direction, primary_key</td>
+ <td>/resource-api/v2/security/application-control-profile/{direction}/{primary_key}</td>
  </tr>
  
  <tr>
@@ -387,44 +387,44 @@ Parameters
  
  <tr>
  <td>security_applications</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/applications/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/applications/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_dlp_data_types</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/dlp-data-types/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/dlp-data-types/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_dlp_dictionaries</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/dlp-dictionaries/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/dlp-dictionaries/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_dlp_exact_data_matches</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/dlp-exact-data-matches/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/dlp-exact-data-matches/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_dlp_file_patterns</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/dlp-file-patterns/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/dlp-file-patterns/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_dlp_fingerprint_databases</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/dlp-fingerprint-databases/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/dlp-fingerprint-databases/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_dlp_profile</td>
- <td>direction, primaryKey</td>
- <td>/resource-api/v2/security/dlp-profile/{direction}/{primaryKey}</td>
+ <td>direction, primary_key</td>
+ <td>/resource-api/v2/security/dlp-profile/{direction}/{primary_key}</td>
  </tr>
  
  <tr>
@@ -435,14 +435,14 @@ Parameters
  
  <tr>
  <td>security_dlp_sensors</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/dlp-sensors/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/dlp-sensors/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_dns_filter_profile</td>
- <td>direction, primaryKey</td>
- <td>/resource-api/v2/security/dns-filter-profile/{direction}/{primaryKey}</td>
+ <td>direction, primary_key</td>
+ <td>/resource-api/v2/security/dns-filter-profile/{direction}/{primary_key}</td>
  </tr>
  
  <tr>
@@ -453,20 +453,20 @@ Parameters
  
  <tr>
  <td>security_domain_threat_feeds</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/domain-threat-feeds/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/domain-threat-feeds/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_endpoint_to_endpoint_policies</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/endpoint-to-endpoint-policies/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/endpoint-to-endpoint-policies/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_file_filter_profile</td>
- <td>direction, primaryKey</td>
- <td>/resource-api/v2/security/file-filter-profile/{direction}/{primaryKey}</td>
+ <td>direction, primary_key</td>
+ <td>/resource-api/v2/security/file-filter-profile/{direction}/{primary_key}</td>
  </tr>
  
  <tr>
@@ -477,50 +477,50 @@ Parameters
  
  <tr>
  <td>security_fortiguard_categories</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/fortiguard-categories/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/fortiguard-categories/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_fortiguard_local_categories</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/fortiguard-local-categories/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/fortiguard-local-categories/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_geoip_countries</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/geoip-countries/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/geoip-countries/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_internal_policies</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/internal-policies/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/internal-policies/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_internal_reverse_policies</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/internal-reverse-policies/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/internal-reverse-policies/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_ip_threat_feeds</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/ip-threat-feeds/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/ip-threat-feeds/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_ips_custom_signatures</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/ips-custom-signatures/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/ips-custom-signatures/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_ips_profile</td>
- <td>direction, primaryKey</td>
- <td>/resource-api/v2/security/ips-profile/{direction}/{primaryKey}</td>
+ <td>direction, primary_key</td>
+ <td>/resource-api/v2/security/ips-profile/{direction}/{primary_key}</td>
  </tr>
  
  <tr>
@@ -531,62 +531,62 @@ Parameters
  
  <tr>
  <td>security_onetime_schedules</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/onetime-schedules/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/onetime-schedules/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_outbound_policies</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/outbound-policies/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/outbound-policies/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_profile_group</td>
- <td>direction, primaryKey</td>
- <td>/resource-api/v2/security/profile-group/{direction}/{primaryKey}</td>
+ <td>direction, primary_key</td>
+ <td>/resource-api/v2/security/profile-group/{direction}/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_profile_groups</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/profile-groups/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/profile-groups/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_recurring_schedules</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/recurring-schedules/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/recurring-schedules/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_schedule_groups</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/schedule-groups/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/schedule-groups/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_service_categories</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/service-categories/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/service-categories/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_service_groups</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/service-groups/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/service-groups/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_services</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/services/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/services/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_ssl_ssh_profile</td>
- <td>direction, primaryKey</td>
- <td>/resource-api/v2/security/ssl-ssh-profile/{direction}/{primaryKey}</td>
+ <td>direction, primary_key</td>
+ <td>/resource-api/v2/security/ssl-ssh-profile/{direction}/{primary_key}</td>
  </tr>
  
  <tr>
@@ -597,20 +597,20 @@ Parameters
  
  <tr>
  <td>security_url_threat_feeds</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/url-threat-feeds/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/url-threat-feeds/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_video_filter_fortiguard_categories</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/security/video-filter-fortiguard-categories/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/security/video-filter-fortiguard-categories/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_video_filter_profile</td>
- <td>direction, primaryKey</td>
- <td>/resource-api/v2/security/video-filter-profile/{direction}/{primaryKey}</td>
+ <td>direction, primary_key</td>
+ <td>/resource-api/v2/security/video-filter-profile/{direction}/{primary_key}</td>
  </tr>
  
  <tr>
@@ -627,8 +627,8 @@ Parameters
  
  <tr>
  <td>security_web_filter_profile</td>
- <td>direction, primaryKey</td>
- <td>/resource-api/v2/security/web-filter-profile/{direction}/{primaryKey}</td>
+ <td>direction, primary_key</td>
+ <td>/resource-api/v2/security/web-filter-profile/{direction}/{primary_key}</td>
  </tr>
  
  <tr>
@@ -639,176 +639,176 @@ Parameters
  
  <tr>
  <td>usage_auth_fsso_agents</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/auth/fsso-agents/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/auth/fsso-agents/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_auth_ldap_servers</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/auth/ldap-servers/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/auth/ldap-servers/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_auth_radius_servers</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/auth/radius-servers/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/auth/radius-servers/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_auth_user_groups</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/auth/user-groups/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/auth/user-groups/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_endpoint_ztna_tags</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/endpoint/ztna-tags/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/endpoint/ztna-tags/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_infra_ssids</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/infra/ssids/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/infra/ssids/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_network_host_groups</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/network/host-groups/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/network/host-groups/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_network_hosts</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/network/hosts/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/network/hosts/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_app_custom_signatures</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/app-custom-signatures/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/app-custom-signatures/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_dlp_dictionaries</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/dlp-dictionaries/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/dlp-dictionaries/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_dlp_exact_data_matches</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/dlp-exact-data-matches/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/dlp-exact-data-matches/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_dlp_file_patterns</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/dlp-file-patterns/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/dlp-file-patterns/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_dlp_fingerprint_databases</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/dlp-fingerprint-databases/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/dlp-fingerprint-databases/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_dlp_sensors</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/dlp-sensors/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/dlp-sensors/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_domain_threat_feeds</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/domain-threat-feeds/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/domain-threat-feeds/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_endpoint_to_endpoint_policies</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/endpoint-to-endpoint-policies/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/endpoint-to-endpoint-policies/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_fortiguard_local_categories</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/fortiguard-local-categories/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/fortiguard-local-categories/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_internal_policies</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/internal-policies/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/internal-policies/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_internal_reverse_policies</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/internal-reverse-policies/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/internal-reverse-policies/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_ip_threat_feeds</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/ip-threat-feeds/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/ip-threat-feeds/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_ips_custom_signatures</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/ips-custom-signatures/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/ips-custom-signatures/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_onetime_schedules</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/onetime-schedules/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/onetime-schedules/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_outbound_policies</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/outbound-policies/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/outbound-policies/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_profile_group</td>
- <td>direction, primaryKey</td>
- <td>/resource-api/v2/usage/security/profile-group/{direction}/{primaryKey}</td>
+ <td>direction, primary_key</td>
+ <td>/resource-api/v2/usage/security/profile-group/{direction}/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_recurring_schedules</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/recurring-schedules/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/recurring-schedules/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_schedule_groups</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/schedule-groups/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/schedule-groups/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_service_groups</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/service-groups/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/service-groups/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_services</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/services/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/services/{primary_key}</td>
  </tr>
  
  <tr>
  <td>usage_security_url_threat_feeds</td>
- <td>primaryKey</td>
- <td>/resource-api/v2/usage/security/url-threat-feeds/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v2/usage/security/url-threat-feeds/{primary_key}</td>
  </tr>
  
  <tr>
@@ -825,20 +825,20 @@ Parameters
  
  <tr>
  <td>security_cert_local_certs</td>
- <td>primaryKey</td>
- <td>/resource-api/v1/security/cert/local-certs/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v1/security/cert/local-certs/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_cert_remote_ca_certs</td>
- <td>primaryKey</td>
- <td>/resource-api/v1/security/cert/remote-ca-certs/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v1/security/cert/remote-ca-certs/{primary_key}</td>
  </tr>
  
  <tr>
  <td>security_pki_users</td>
- <td>primaryKey</td>
- <td>/resource-api/v1/security/pki-users/{primaryKey}</td>
+ <td>primary_key</td>
+ <td>/resource-api/v1/security/pki-users/{primary_key}</td>
  </tr>
  
  </tbody>
