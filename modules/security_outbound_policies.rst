@@ -70,45 +70,45 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "outbound_policy_ansible"
+      primary_key: "outbound_policy_ansible"
     tasks:
       - name: Create/Update security outbound policies
         fortinet.fortisase.security_outbound_policies:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: true
             scope: "vpn-user"
             users:
-              - primaryKey: "gui_test"
+              - primary_key: "gui_test"
                 datasource: "auth/user-groups"
             destinations:
-              - primaryKey: "Salesforce-Web"
+              - primary_key: "Salesforce-Web"
                 datasource: "network/internet-services"
-              - primaryKey: "SAP-Web"
+              - primary_key: "SAP-Web"
                 datasource: "network/internet-services"
             action: "accept"
-            logTraffic: "all"
+            log_traffic: "all"
             services:
-              - primaryKey: "ALL_TCP"
+              - primary_key: "ALL_TCP"
                 datasource: "security/services"
-            profileGroup:
+            profile_group:
               group:
-                primaryKey: "outbound"
+                primary_key: "outbound"
                 datasource: "security/profile-groups"
-              forceCertInspection: false
+              force_cert_inspection: false
             sources:
-              - primaryKey: "gui_test"
+              - primary_key: "gui_test"
                 datasource: "endpoint/ztna-tags"
             schedule:
-              primaryKey: "always"
+              primary_key: "always"
               datasource: "security/recurring-schedules"
             comments: "Secure SaaS Access Policy"
       - name: Delete security outbound policies
         fortinet.fortisase.security_outbound_policies:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

@@ -62,34 +62,34 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "$sase-global"
+      primary_key: "$sase-global"
     tasks:
       - name: Create/Update Auth VPN SAML Server with full configuration
         fortinet.fortisase.auth_vpn_saml_server:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: true
-            digestMethod: "sha256"
-            idpEntityId: "https://sts.windows.net/example/"
-            idpSignOnUrl: "https://login.microsoftonline.com/example/saml1"
-            idpLogOutUrl: "https://login.microsoftonline.com/example/saml1"
-            idpCertificate:
-              primaryKey: "certificate"
+            digest_method: "sha256"
+            idp_entity_id: "https://sts.windows.net/example/"
+            idp_sign_on_url: "https://login.microsoftonline.com/example/saml1"
+            idp_log_out_url: "https://login.microsoftonline.com/example/saml1"
+            idp_certificate:
+              primary_key: "certificate"
               datasource: "system/certificate/remote-certificates"
             username: "example_username"
-            groupName: "example_group_name"
-            spCert:
-              primaryKey: "FortiSASE Default Certificate"
+            group_name: "example_group_name"
+            sp_cert:
+              primary_key: "FortiSASE Default Certificate"
               datasource: "system/certificate/local-certificates"
-            scimEnabled: false
-            groupId: ""
-            entraIdEnabled: false
+            scim_enabled: false
+            group_id: ""
+            entra_id_enabled: false
       - name: Wait until the resource $meta.state is done
         fortinet.fortisase.fortisase_facts:
           selector: "auth_vpn_saml_server"
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
         register: result
         until: result.response[0]['$meta'].state == "done"
         retries: 15
@@ -99,13 +99,13 @@ Examples
       - name: Delete Auth VPN SAML Server
         fortinet.fortisase.auth_vpn_saml_server:
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: false
       - name: Wait until the resource $meta doesn't have state
         fortinet.fortisase.fortisase_facts:
           selector: "auth_vpn_saml_server"
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
         register: result
         until: result.response[0]['$meta']['state'] is not defined
         retries: 15

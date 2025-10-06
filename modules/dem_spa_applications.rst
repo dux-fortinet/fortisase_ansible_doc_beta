@@ -51,25 +51,25 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "example_name"
+      primary_key: "example_name"
     tasks:
       - name: Create/Update Dem SPA Applications
         fortinet.fortisase.dem_spa_applications:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             server: "string"
-            latencyThreshold: 10000000
-            jitterThreshold: 10000000
-            packetlossThreshold: 100
+            latency_threshold: 10000000
+            jitter_threshold: 10000000
+            packetloss_threshold: 100
             interval: 20
-            failTime: 1
-            recoveryTime: 1
+            fail_time: 1
+            recovery_time: 1
       - name: Delete Dem SPA Applications
         fortinet.fortisase.dem_spa_applications:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

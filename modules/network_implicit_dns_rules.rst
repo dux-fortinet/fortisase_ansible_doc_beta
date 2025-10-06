@@ -52,8 +52,8 @@ Examples
       - name: Update Network Implicit DNS Rule
         fortinet.fortisase.network_implicit_dns_rules:
           params:
-            primaryKey: "implicit_all"
-            dnsServer: "fortiguard"
+            primary_key: "implicit_all"
+            dns_server: "fortiguard"
   
 
 

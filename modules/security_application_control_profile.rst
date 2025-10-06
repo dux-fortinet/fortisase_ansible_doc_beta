@@ -70,98 +70,98 @@ Examples
         fortinet.fortisase.security_profile_group:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
+            primary_key: "{{ profile_group }}"
       - name: Update security application control profile
         fortinet.fortisase.security_application_control_profile:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
-            applicationControls: []
-            blockNonDefaultPortApplications: "disable"
-            networkProtocolEnforcement: "disable"
-            networkProtocols: []
-            unknownApplicationAction: "monitor"
-            applicationCategoryControls:
+            primary_key: "{{ profile_group }}"
+            application_controls: []
+            block_non_default_port_applications: "disable"
+            network_protocol_enforcement: "disable"
+            network_protocols: []
+            unknown_application_action: "monitor"
+            application_category_controls:
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: P2P
+                  primary_key: P2P
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: VoIP
+                  primary_key: VoIP
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Video/Audio
+                  primary_key: Video/Audio
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Proxy
+                  primary_key: Proxy
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Remote.Access
+                  primary_key: Remote.Access
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Game
+                  primary_key: Game
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: General.Interest
+                  primary_key: General.Interest
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Network.Service
+                  primary_key: Network.Service
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Update
+                  primary_key: Update
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Email
+                  primary_key: Email
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Storage.Backup
+                  primary_key: Storage.Backup
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Social.Media
+                  primary_key: Social.Media
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Web.Client
+                  primary_key: Web.Client
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Industrial
+                  primary_key: Industrial
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Collaboration
+                  primary_key: Collaboration
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Business
+                  primary_key: Business
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Cloud.IT
+                  primary_key: Cloud.IT
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Mobile
+                  primary_key: Mobile
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: Unknown Applications
+                  primary_key: Unknown Applications
               - action: allow
                 category:
                   datasource: security/application-categories
-                  primaryKey: GenAI
+                  primary_key: GenAI
   
 
 

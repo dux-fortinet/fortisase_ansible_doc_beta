@@ -49,23 +49,23 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "example_certs"
+      primary_key: "example_certs"
     tasks:
       - name: Create/Update Security Certificate Local Certificates
         fortinet.fortisase.security_cert_local_certs:
           state: present
           params:
             format: "regular"
-            primaryKey: "{{ primaryKey }}"
-            certName: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
+            cert_name: "{{ primaryKey }}"
             password: "fortinet"
-            fileContent: "{{ lookup('file', 'server_cert.pem') | b64encode }}"
-            keyFileContent: "{{ lookup('file', 'server_key.pem') | b64encode }}"
+            file_content: "{{ lookup('file', 'server_cert.pem') | b64encode }}"
+            key_file_content: "{{ lookup('file', 'server_key.pem') | b64encode }}"
       - name: Delete Security Certificate Local Certificates
         fortinet.fortisase.security_cert_local_certs:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

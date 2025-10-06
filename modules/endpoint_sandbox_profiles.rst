@@ -62,31 +62,31 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "policy1"
+      primary_key: "policy1"
     tasks:
       - name: Create a new endpoint profile, do nothing if the endpoint profile already exists
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: true
       - name: Update sandbox profile
         fortinet.fortisase.endpoint_sandbox_profiles:
           params:
-            primaryKey: "{{ primaryKey }}"
-            sandboxMode: "FortiSASE"  # Disabled, FortiSASE, StandaloneFortiSandbox
-            detectionVerdictLevel: "Medium"
+            primary_key: "{{ primaryKey }}"
+            sandbox_mode: "FortiSASE"  # Disabled, FortiSASE, StandaloneFortiSandbox
+            detection_verdict_level: "Medium"
             exceptions:
-              excludeFilesFromTrustedSources: "disable"
+              exclude_files_from_trusted_sources: "disable"
               files: []
               folders: []
-            fileSubmissionOptions:
-              allEmailDownloads: "enable"
-              allFilesMappedNetworkDrives: "enable"
-              allFilesRemovableMedia: "enable"
-              allWebDownloads: "enable"
-            remediationActions: "quarantine"
-            timeoutAwaitingSandboxResults: 0
+            file_submission_options:
+              all_email_downloads: "enable"
+              all_files_mapped_network_drives: "enable"
+              all_files_removable_media: "enable"
+              all_web_downloads: "enable"
+            remediation_actions: "quarantine"
+            timeout_awaiting_sandbox_results: 0
   
 
 

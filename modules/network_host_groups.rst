@@ -53,15 +53,15 @@ Examples
         fortinet.fortisase.network_host_groups:
           state: present
           params:
-            primaryKey: "{{ host_group }}"
+            primary_key: "{{ host_group }}"
             members:
               - datasource: "network/hosts"
-                primaryKey: "all"
+                primary_key: "all"
       - name: Delete Network Host Groups
         fortinet.fortisase.network_host_groups:
           state: absent
           params:
-            primaryKey: "{{ host_group }}"
+            primary_key: "{{ host_group }}"
   
 
 

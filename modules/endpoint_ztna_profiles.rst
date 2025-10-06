@@ -61,21 +61,21 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "policy1"
+      primary_key: "policy1"
     tasks:
       - name: Create a new endpoint profile, do nothing if the endpoint profile already exists
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: true
       - name: Enable endpoint ZTNA profiles
         fortinet.fortisase.endpoint_ztna_profiles:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
-            allowAutomaticSignOn: "enable"
-            connectionRules:
+            primary_key: "{{ primaryKey }}"
+            allow_automatic_sign_on: "enable"
+            connection_rules:
               - id: 1
                 address: "192.168.1.1"
                 uid: "1"
@@ -84,9 +84,9 @@ Examples
                 name: "test"
                 port: "80"
                 encryption: "enable"
-            entraId:
-              applicationId: "0"
-              domainName: "0"
+            entra_id:
+              application_id: "0"
+              domain_name: "0"
   
 
 

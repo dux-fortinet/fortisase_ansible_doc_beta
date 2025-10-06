@@ -57,7 +57,7 @@ Examples
         fortinet.fortisase.network_hosts:
           state: present
           params:
-            primaryKey: "{{ host }}"
+            primary_key: "{{ host }}"
             type: "ipmask"
             location: "internal"
             subnet: "192.168.4.0/24"
@@ -65,7 +65,7 @@ Examples
         fortinet.fortisase.network_hosts:
           state: absent
           params:
-            primaryKey: "{{ host }}"
+            primary_key: "{{ host }}"
   
 
 

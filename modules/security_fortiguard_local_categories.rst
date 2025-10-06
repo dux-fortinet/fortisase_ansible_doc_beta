@@ -46,20 +46,20 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "asbcategories"
+      primary_key: "asbcategories"
     tasks:
       - name: Create/Update Security FortiGuard Local Categories
         fortinet.fortisase.security_fortiguard_local_categories:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
-            threatWeight: "low"
+            primary_key: "{{ primaryKey }}"
+            threat_weight: "low"
             urls: ["example.com"]
       - name: Delete Security FortiGuard Local Categories
         fortinet.fortisase.security_fortiguard_local_categories:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

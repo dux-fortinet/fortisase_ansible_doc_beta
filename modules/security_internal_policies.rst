@@ -70,43 +70,43 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "saas_app_ansible2"
+      primary_key: "saas_app_ansible2"
     tasks:
       - name: Create/Update security internal policies
         fortinet.fortisase.security_internal_policies:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: true
             scope: "vpn-user"
             users:
-              - primaryKey: "gui_test"
+              - primary_key: "gui_test"
                 datasource: "auth/user-groups"
             destinations:
-              - primaryKey: "gui_test"
+              - primary_key: "gui_test"
                 datasource: "network/hosts"
             action: "deny"
-            logTraffic: "all"
-            profileGroup:
+            log_traffic: "all"
+            profile_group:
               group:
-                primaryKey: "internal"
+                primary_key: "internal"
                 datasource: "security/profile-groups"
-              forceCertInspection: false
+              force_cert_inspection: false
             sources:
-              - primaryKey: "gui_test"
+              - primary_key: "gui_test"
                 datasource: "endpoint/ztna-tags"
             schedule:
-              primaryKey: "always"
+              primary_key: "always"
               datasource: "security/recurring-schedules"
             comments: "Secure SaaS Access Policy"
             services:
-              - primaryKey: "ALL_TCP"
+              - primary_key: "ALL_TCP"
                 datasource: "security/services"
       - name: Delete security internal policies
         fortinet.fortisase.security_internal_policies:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

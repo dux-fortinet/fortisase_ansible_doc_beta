@@ -58,12 +58,12 @@ Examples
         fortinet.fortisase.security_profile_group:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
+            primary_key: "{{ profile_group }}"
       - name: Update security file filter profile
         fortinet.fortisase.security_file_filter_profile:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
+            primary_key: "{{ profile_group }}"
             block: []
             monitor: []
   

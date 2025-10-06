@@ -57,28 +57,28 @@ Examples
         fortinet.fortisase.security_dlp_file_patterns:
           state: present
           params:
-            primaryKey: "Placeholder, not in use in create"
+            primary_key: "Placeholder, not in use in create"
             tag: "{{ dlp_file_pattern_name }}"
             entries:
               - pattern: "string"
-                filterType: "type"
-                fileType: "7z"
+                filter_type: "type"
+                file_type: "7z"
         register: result
       - name: Update Security DLP File Patterns
         fortinet.fortisase.security_dlp_file_patterns:
           state: present
           params:
-            primaryKey: "{{ result.response.primaryKey }}"
+            primary_key: "{{ result.response.primaryKey }}"
             tag: "{{ dlp_file_pattern_name }}"
             entries:
               - pattern: "string_modified"
-                filterType: "type"
-                fileType: "7z"
+                filter_type: "type"
+                file_type: "7z"
       - name: Delete Security DLP File Patterns
         fortinet.fortisase.security_dlp_file_patterns:
           state: absent
           params:
-            primaryKey: "{{ result.response.primaryKey }}"
+            primary_key: "{{ result.response.primaryKey }}"
   
 
 

@@ -50,15 +50,15 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "group1"
+      primary_key: "group1"
     tasks:
       - name: Create/Update endpoint group invitation codes
         fortinet.fortisase.endpoint_group_invitation_codes:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
-            expireDate: "2026-03-08T12:45:30Z"
-            groupAssignment:
+            primary_key: "{{ primaryKey }}"
+            expire_date: "2026-03-08T12:45:30Z"
+            group_assignment:
               enabled: true
               group:
                 id: "1"
@@ -67,7 +67,7 @@ Examples
         fortinet.fortisase.endpoint_group_invitation_codes:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

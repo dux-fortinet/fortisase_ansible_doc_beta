@@ -46,7 +46,7 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "example.com"
+      primary_key: "example.com"
       fqdn: "example.com"
       alias: "example.com"
     tasks:
@@ -54,14 +54,14 @@ Examples
         fortinet.fortisase.dem_custom_saas_apps:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             fqdn: "{{ fqdn }}"
             alias: "{{ alias }}"
       - name: Delete Dem Custom SaaS Apps
         fortinet.fortisase.dem_custom_saas_apps:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

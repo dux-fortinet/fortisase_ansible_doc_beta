@@ -83,22 +83,22 @@ Examples
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primaryKey: "{{ policy }}"
+            primary_key: "{{ policy }}"
             enabled: true
       - name: Create/Update ztna tag, do nothing if the ztna tag already exists
         fortinet.fortisase.endpoint_ztna_tags:
           state: present
           params:
-            primaryKey: "{{ tag }}"
+            primary_key: "{{ tag }}"
             name: "{{ tag }}"
       - name: Create/Update ztna rule
         fortinet.fortisase.endpoint_ztna_rules:
           state: present
           params:
-            primaryKey: "{{ rule_name }}"
+            primary_key: "{{ rule_name }}"
             status: "enable" # "enable" or "disable"
             tag:
-              primaryKey: "{{ tag }}"
+              primary_key: "{{ tag }}"
               datasource: "endpoint/ztna-tags"
             comments: "example comment"
             rules:
@@ -109,7 +109,7 @@ Examples
         fortinet.fortisase.endpoint_ztna_rules:
           state: absent
           params:
-            primaryKey: "{{ rule_name }}"
+            primary_key: "{{ rule_name }}"
   
 
 

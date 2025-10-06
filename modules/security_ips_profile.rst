@@ -86,36 +86,36 @@ Examples
         fortinet.fortisase.security_profile_group:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
+            primary_key: "{{ profile_group }}"
       - name: Update security ips profile
         fortinet.fortisase.security_ips_profile:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
-            botnetScanning: "block"
+            primary_key: "{{ profile_group }}"
+            botnet_scanning: "block"
             comment: "Recommended"
-            customRuleGroups: []
+            custom_rule_groups: []
             entries:
               - action: "default"
                 application: "all"
                 cve: []
-                defaultAction: "all"
-                defaultStatus: "all"
+                default_action: "all"
+                default_status: "all"
                 exempt_ip: []
                 location: "all"
                 log: "enable"
-                logAttackContext: "disable"
-                logPacket: "disable"
+                log_attack_context: "disable"
+                log_packet: "disable"
                 os: "all"
                 protocol: "all"
                 quarantine: "none"
                 rule: []
                 severity: "all"
                 status: "default"
-                vulnType: []
-            isBlockingMaliciousUrl: false
-            isExtendedLogEnabled: false
-            profileType: "recommended"
+                vuln_type: []
+            is_blocking_malicious_url: false
+            is_extended_log_enabled: false
+            profile_type: "recommended"
   
 
 

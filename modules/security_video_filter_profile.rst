@@ -62,59 +62,59 @@ Examples
         fortinet.fortisase.security_profile_group:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
+            primary_key: "{{ profile_group }}"
       - name: Update security video filter profile
         fortinet.fortisase.security_video_filter_profile:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
-            defaultAction: "monitor"
+            primary_key: "{{ profile_group }}"
+            default_action: "monitor"
             channels: []
-            fortiguardFilters:
+            fortiguard_filters:
               - action: "default"
                 category:
                   datasource: "security/video-filter-fortiguard-categories"
-                  primaryKey: "Not Rated"
+                  primary_key: "Not Rated"
               - action: "default"
                 category:
                   datasource: "security/video-filter-fortiguard-categories"
-                  primaryKey: "Business"
+                  primary_key: "Business"
               - action: "default"
                 category:
                   datasource: "security/video-filter-fortiguard-categories"
-                  primaryKey: "Entertainment"
+                  primary_key: "Entertainment"
               - action: "default"
                 category:
                   datasource: "security/video-filter-fortiguard-categories"
-                  primaryKey: "Games"
+                  primary_key: "Games"
               - action: "default"
                 category:
                   datasource: "security/video-filter-fortiguard-categories"
-                  primaryKey: "Knowledge"
+                  primary_key: "Knowledge"
               - action: "default"
                 category:
                   datasource: "security/video-filter-fortiguard-categories"
-                  primaryKey: "Lifestyle"
+                  primary_key: "Lifestyle"
               - action: "default"
                 category:
                   datasource: "security/video-filter-fortiguard-categories"
-                  primaryKey: "Music"
+                  primary_key: "Music"
               - action: "default"
                 category:
                   datasource: "security/video-filter-fortiguard-categories"
-                  primaryKey: "News"
+                  primary_key: "News"
               - action: "default"
                 category:
                   datasource: "security/video-filter-fortiguard-categories"
-                  primaryKey: "People"
+                  primary_key: "People"
               - action: "default"
                 category:
                   datasource: "security/video-filter-fortiguard-categories"
-                  primaryKey: "Society"
+                  primary_key: "Society"
               - action: "default"
                 category:
                   datasource: "security/video-filter-fortiguard-categories"
-                  primaryKey: "Sports"
+                  primary_key: "Sports"
   
 
 

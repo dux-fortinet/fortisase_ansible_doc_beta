@@ -47,20 +47,20 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "onetime_schedule_ansible"
+      primary_key: "onetime_schedule_ansible"
     tasks:
       - name: Create/Update security onetime schedules
         fortinet.fortisase.security_onetime_schedules:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
-            startUtc: 1422835200
-            endUtc: 1454371200
+            primary_key: "{{ primaryKey }}"
+            start_utc: 1422835200
+            end_utc: 1454371200
       - name: Delete security onetime schedules
         fortinet.fortisase.security_onetime_schedules:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

@@ -58,23 +58,23 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "agent_example"
+      primary_key: "agent_example"
     tasks:
       - name: Create/Update Auth FSSO Agent
         fortinet.fortisase.auth_fsso_agents:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             name: "{{ primaryKey }}"
             server: "1.2.3.4"
             status: "disconnected"
             password: "password"
-            sslTrustedCert: "remote_ca_certs"
+            ssl_trusted_cert: "remote_ca_certs"
       - name: Delete Auth FSSO Agent
         fortinet.fortisase.auth_fsso_agents:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

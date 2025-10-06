@@ -46,19 +46,19 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "policy1"
+      primary_key: "policy1"
     tasks:
       - name: Create/Update endpoint profile
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: true
       - name: Delete endpoint profile
         fortinet.fortisase.endpoint_policies:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

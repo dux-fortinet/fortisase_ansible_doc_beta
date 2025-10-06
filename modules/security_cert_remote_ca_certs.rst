@@ -46,20 +46,20 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "example_ca_certs"
+      primary_key: "example_ca_certs"
     tasks:
       - name: Create/Update Security Certificate Remote CA Certificates
         fortinet.fortisase.security_cert_remote_ca_certs:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
-            certName: "{{ primaryKey }}"
-            fileContent: "{{ lookup('file', 'cert2.crt') | b64encode }}"
+            primary_key: "{{ primaryKey }}"
+            cert_name: "{{ primaryKey }}"
+            file_content: "{{ lookup('file', 'cert2.crt') | b64encode }}"
       - name: Delete Security Certificate Remote CA Certificates
         fortinet.fortisase.security_cert_remote_ca_certs:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

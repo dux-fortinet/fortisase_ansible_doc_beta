@@ -58,23 +58,23 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "example"
+      primary_key: "example"
     tasks:
       - name: Create/Update Infrastructure SSIDs
         fortinet.fortisase.infra_ssids:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
-            broadcastSsid: "enable"
-            securityMode: "wpa2-only-personal"
-            preSharedKey: "1234567890"
-            wifiSsid: "wifi_ssid_example"
-            clientLimit: 101
+            primary_key: "{{ primaryKey }}"
+            broadcast_ssid: "enable"
+            security_mode: "wpa2-only-personal"
+            pre_shared_key: "1234567890"
+            wifi_ssid: "wifi_ssid_example"
+            client_limit: 101
       - name: Delete Infrastructure SSIDs
         fortinet.fortisase.infra_ssids:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

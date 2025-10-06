@@ -58,12 +58,12 @@ Examples
         fortinet.fortisase.security_profile_group:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
+            primary_key: "{{ profile_group }}"
       - name: Update security antivirus profile
         fortinet.fortisase.security_antivirus_profile:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
+            primary_key: "{{ profile_group }}"
             cifs: "enable"
             ftp: "enable"
             http: "enable"

@@ -93,20 +93,20 @@ Examples
         fortinet.fortisase.security_profile_group:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
+            primary_key: "{{ profile_group }}"
       - name: Update security web filter profile
         fortinet.fortisase.security_web_filter_profile:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
-            blockInvalidUrl: "disable"
-            contentFilters: []
-            enforceSafeSearch: "disable"
-            fqdnThreatFeedFilters: []
-            httpHeaders: []
-            trafficOnRatingError: "enable"
-            urlFilters: []
-            useFortiguardFilters: "enable"
+            primary_key: "{{ profile_group }}"
+            block_invalid_url: "disable"
+            content_filters: []
+            enforce_safe_search: "disable"
+            fqdn_threat_feed_filters: []
+            http_headers: []
+            traffic_on_rating_error: "enable"
+            url_filters: []
+            use_fortiguard_filters: "enable"
   
 
 

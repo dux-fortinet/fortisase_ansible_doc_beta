@@ -47,20 +47,20 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "asbusers"
+      primary_key: "asbusers"
     tasks:
       - name: Create/Update Security PKI Users
         fortinet.fortisase.security_pki_users:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             ca:
               name: "Fortinet_CA"
       - name: Delete Security PKI Users
         fortinet.fortisase.security_pki_users:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

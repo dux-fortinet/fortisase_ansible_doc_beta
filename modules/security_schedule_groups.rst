@@ -47,21 +47,21 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "schedule_group_ansible"
+      primary_key: "schedule_group_ansible"
     tasks:
       - name: Create/Update security schedule groups
         fortinet.fortisase.security_schedule_groups:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             members:
               - datasource: "security/recurring-schedules"
-                primaryKey: "always"
+                primary_key: "always"
       - name: Delete security schedule groups
         fortinet.fortisase.security_schedule_groups:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

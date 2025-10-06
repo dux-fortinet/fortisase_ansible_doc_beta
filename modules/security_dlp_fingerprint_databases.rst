@@ -61,25 +61,25 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "asbdatabases"
+      primary_key: "asbdatabases"
     tasks:
       - name: Create/Update Security DLP Fingerprint Databases
         fortinet.fortisase.security_dlp_fingerprint_databases:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             server: "example-server.com"
             sensitivity: "Warning"
-            includeSubdirectories: "enable"
-            serverDirectory: "/path/to/directory/"
-            filePattern: "*.txt"
+            include_subdirectories: "enable"
+            server_directory: "/path/to/directory/"
+            file_pattern: "*.txt"
             schedule:
               period: "daily"
-              syncHour: 2
-              syncMinute: 0
-            removeDeletedFileFingerprints: "enable"
-            keepModified: "enable"
-            scanOnCreation: "enable"
+              sync_hour: 2
+              sync_minute: 0
+            remove_deleted_file_fingerprints: "enable"
+            keep_modified: "enable"
+            scan_on_creation: "enable"
             authentication:
               username: "admin"
               password: "password123"
@@ -87,7 +87,7 @@ Examples
         fortinet.fortisase.security_dlp_fingerprint_databases:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

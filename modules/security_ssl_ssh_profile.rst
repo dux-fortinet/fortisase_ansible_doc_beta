@@ -73,21 +73,21 @@ Examples
         fortinet.fortisase.security_profile_group:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
+            primary_key: "{{ profile_group }}"
       - name: Update security ssl ssh profile
         fortinet.fortisase.security_ssl_ssh_profile:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
-            caCertificate:
+            primary_key: "{{ profile_group }}"
+            ca_certificate:
               datasource: "system/certificate/ca-certificates"
-              primaryKey: "Fortinet_CA_SSL"
-            certProbeFailure: "allow"
-            expiredCertificateAction: "block"
-            inspectionMode: "certificate-inspection"
-            revokedCertificateAction: "block"
-            timedOutValidationCertificateAction: "allow"
-            validationFailedCertificateAction: "block"
+              primary_key: "Fortinet_CA_SSL"
+            cert_probe_failure: "allow"
+            expired_certificate_action: "block"
+            inspection_mode: "certificate-inspection"
+            revoked_certificate_action: "block"
+            timed_out_validation_certificate_action: "allow"
+            validation_failed_certificate_action: "block"
   
 
 

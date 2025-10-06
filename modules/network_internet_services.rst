@@ -49,18 +49,18 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "Google-Web"
+      primary_key: "Google-Web"
     tasks:
       - name: Create/Update network internet services
         fortinet.fortisase.network_internet_services:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
       - name: Delete network internet services
         fortinet.fortisase.network_internet_services:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

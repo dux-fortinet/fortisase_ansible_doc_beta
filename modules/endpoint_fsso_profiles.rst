@@ -49,18 +49,18 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "policy1"
+      primary_key: "policy1"
     tasks:
       - name: Create a new endpoint profile, do nothing if the endpoint profile already exists
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: true
       - name: Update fsso profile
         fortinet.fortisase.endpoint_fsso_profiles:
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             port: 443
   
 

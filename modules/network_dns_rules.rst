@@ -49,24 +49,24 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "1"
+      primary_key: "1"
     tasks:
       - name: Create/Update Network DNS Rule
         fortinet.fortisase.network_dns_rules:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
-            primaryDns: "1.1.1.1"
-            secondaryDns: "1.1.1.2"
+            primary_key: "{{ primaryKey }}"
+            primary_dns: "1.1.1.1"
+            secondary_dns: "1.1.1.2"
             domains:
               - www.facebook.com
               - www.google.com
-            popDnsOverride: {}
+            pop_dns_override: {}
       - name: Delete Network DNS Rule
         fortinet.fortisase.network_dns_rules:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

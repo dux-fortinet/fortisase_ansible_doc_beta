@@ -65,30 +65,30 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "saas_app_ansible"
+      primary_key: "saas_app_ansible"
     tasks:
       - name: Create/Update security endpoint to endpoint policies
         fortinet.fortisase.security_endpoint_to_endpoint_policies:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: true
             users:
-              - primaryKey: "gui_test"
+              - primary_key: "gui_test"
                 datasource: "auth/user-groups"
             services:
-              - primaryKey: "ALL_TCP"
+              - primary_key: "ALL_TCP"
                 datasource: "security/services"
             action: "accept"
-            logTraffic: "all"
+            log_traffic: "all"
             schedule:
-              primaryKey: "always"
+              primary_key: "always"
               datasource: "security/recurring-schedules"
       - name: Delete security endpoint to endpoint policies
         fortinet.fortisase.security_endpoint_to_endpoint_policies:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

@@ -50,22 +50,22 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "policy1"
+      primary_key: "policy1"
     tasks:
       - name: Create a new endpoint profile, do nothing if the endpoint profile already exists
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: true
       - name: Update setting profile
         fortinet.fortisase.endpoint_setting_profiles:
           params:
-            primaryKey: "{{ primaryKey }}"
-            notifyVpnIssue: "enable"
-            showNotifications: "enable"
-            showTagFortiClient: "disable"
-            usersCanDisconnect: "disable"
+            primary_key: "{{ primaryKey }}"
+            notify_vpn_issue: "enable"
+            show_notifications: "enable"
+            show_tag_forti_client: "disable"
+            users_can_disconnect: "disable"
   
 
 

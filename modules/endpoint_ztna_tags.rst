@@ -51,13 +51,13 @@ Examples
         fortinet.fortisase.endpoint_ztna_tags:
           state: present
           params:
-            primaryKey: "{{ tag }}"
+            primary_key: "{{ tag }}"
             name: "{{ tag }}"
       - name: Delete ztna tag
         fortinet.fortisase.endpoint_ztna_tags:
           state: absent
           params:
-            primaryKey: "{{ tag }}"
+            primary_key: "{{ tag }}"
   
 
 

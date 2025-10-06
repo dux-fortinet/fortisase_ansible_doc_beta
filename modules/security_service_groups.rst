@@ -54,18 +54,18 @@ Examples
         fortinet.fortisase.security_service_groups:
           state: present
           params:
-            primaryKey: "{{ security_service_group }}"
+            primary_key: "{{ security_service_group }}"
             proxy: false
             members:
-              - primaryKey: "HTTP"
+              - primary_key: "HTTP"
                 datasource: "security/services"
-              - primaryKey: "HTTPS"
+              - primary_key: "HTTPS"
                 datasource: "security/services"
       - name: Delete security service group
         fortinet.fortisase.security_service_groups:
           state: absent
           params:
-            primaryKey: "{{ security_service_group }}"
+            primary_key: "{{ security_service_group }}"
   
 
 

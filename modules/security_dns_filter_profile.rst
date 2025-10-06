@@ -78,394 +78,394 @@ Examples
         fortinet.fortisase.security_profile_group:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
+            primary_key: "{{ profile_group }}"
       - name: Update security dns filter profile
         fortinet.fortisase.security_dns_filter_profile:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
-            useForEdgeDevices: false
-            allowDnsRequestsOnRatingError: "enable"
-            dnsTranslationEntries: []
-            domainFilters: []
-            domainThreatFeedFilters: []
-            enableAllLogs: "disable"
-            enableBotnetBlocking: "enable"
-            enableSafeSearch: "disable"
-            useFortiguardFilters: "enable"
-            fortiguardFilters:
+            primary_key: "{{ profile_group }}"
+            use_for_edge_devices: false
+            allow_dns_requests_on_rating_error: "enable"
+            dns_translation_entries: []
+            domain_filters: []
+            domain_threat_feed_filters: []
+            enable_all_logs: "disable"
+            enable_botnet_blocking: "enable"
+            enable_safe_search: "disable"
+            use_fortiguard_filters: "enable"
+            fortiguard_filters:
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Alternative Beliefs
+                  primary_key: Alternative Beliefs
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Abortion
+                  primary_key: Abortion
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Other Adult Materials
+                  primary_key: Other Adult Materials
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Advocacy Organizations
+                  primary_key: Advocacy Organizations
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Gambling
+                  primary_key: Gambling
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Extremist Groups
+                  primary_key: Extremist Groups
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Nudity and Risque
+                  primary_key: Nudity and Risque
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Pornography
+                  primary_key: Pornography
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Dating
+                  primary_key: Dating
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: "Weapons (Sales)"
+                  primary_key: "Weapons (Sales)"
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Unrated
+                  primary_key: Unrated
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Marijuana
+                  primary_key: Marijuana
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Sex Education
+                  primary_key: Sex Education
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Alcohol
+                  primary_key: Alcohol
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Tobacco
+                  primary_key: Tobacco
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Lingerie and Swimsuit
+                  primary_key: Lingerie and Swimsuit
               - action: monitor
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Sports Hunting and War Games
+                  primary_key: Sports Hunting and War Games
               - action: block
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Malicious Websites
+                  primary_key: Malicious Websites
               - action: block
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Phishing
+                  primary_key: Phishing
               - action: block
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Spam URLs
+                  primary_key: Spam URLs
               - action: block
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Dynamic DNS
+                  primary_key: Dynamic DNS
               - action: block
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Newly Observed Domain
+                  primary_key: Newly Observed Domain
               - action: block
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Newly Registered Domain
+                  primary_key: Newly Registered Domain
               - action: block
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Terrorism
+                  primary_key: Terrorism
               - action: block
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Crypto Mining
+                  primary_key: Crypto Mining
               - action: block
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Potentially Unwanted Program
+                  primary_key: Potentially Unwanted Program
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Drug Abuse
+                  primary_key: Drug Abuse
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Hacking
+                  primary_key: Hacking
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Illegal or Unethical
+                  primary_key: Illegal or Unethical
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Discrimination
+                  primary_key: Discrimination
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Explicit Violence
+                  primary_key: Explicit Violence
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Proxy Avoidance
+                  primary_key: Proxy Avoidance
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Plagiarism
+                  primary_key: Plagiarism
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Child Sexual Abuse
+                  primary_key: Child Sexual Abuse
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Freeware and Software Downloads
+                  primary_key: Freeware and Software Downloads
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: File Sharing and Storage
+                  primary_key: File Sharing and Storage
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Streaming Media and Download
+                  primary_key: Streaming Media and Download
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Peer-to-peer File Sharing
+                  primary_key: Peer-to-peer File Sharing
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Internet Radio and TV
+                  primary_key: Internet Radio and TV
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Internet Telephony
+                  primary_key: Internet Telephony
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Advertising
+                  primary_key: Advertising
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Brokerage and Trading
+                  primary_key: Brokerage and Trading
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Games
+                  primary_key: Games
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Web-based Email
+                  primary_key: Web-based Email
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Entertainment
+                  primary_key: Entertainment
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Arts and Culture
+                  primary_key: Arts and Culture
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Education
+                  primary_key: Education
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Health and Wellness
+                  primary_key: Health and Wellness
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Job Search
+                  primary_key: Job Search
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Medicine
+                  primary_key: Medicine
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: News and Media
+                  primary_key: News and Media
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Social Networking
+                  primary_key: Social Networking
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Political Organizations
+                  primary_key: Political Organizations
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Reference
+                  primary_key: Reference
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Global Religion
+                  primary_key: Global Religion
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Shopping
+                  primary_key: Shopping
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Society and Lifestyles
+                  primary_key: Society and Lifestyles
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Sports
+                  primary_key: Sports
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Travel
+                  primary_key: Travel
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Personal Vehicles
+                  primary_key: Personal Vehicles
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Dynamic Content
+                  primary_key: Dynamic Content
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Meaningless Content
+                  primary_key: Meaningless Content
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Folklore
+                  primary_key: Folklore
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Web Chat
+                  primary_key: Web Chat
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Instant Messaging
+                  primary_key: Instant Messaging
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Newsgroups and Message Boards
+                  primary_key: Newsgroups and Message Boards
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Digital Postcards
+                  primary_key: Digital Postcards
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Child Education
+                  primary_key: Child Education
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Real Estate
+                  primary_key: Real Estate
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Restaurant and Dining
+                  primary_key: Restaurant and Dining
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Personal Websites and Blogs
+                  primary_key: Personal Websites and Blogs
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Content Servers
+                  primary_key: Content Servers
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Domain Parking
+                  primary_key: Domain Parking
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Personal Privacy
+                  primary_key: Personal Privacy
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Auction
+                  primary_key: Auction
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Finance and Banking
+                  primary_key: Finance and Banking
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Search Engines and Portals
+                  primary_key: Search Engines and Portals
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: General Organizations
+                  primary_key: General Organizations
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Business
+                  primary_key: Business
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Information and Computer Security
+                  primary_key: Information and Computer Security
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Government and Legal Organizations
+                  primary_key: Government and Legal Organizations
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Information Technology
+                  primary_key: Information Technology
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Armed Forces
+                  primary_key: Armed Forces
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Web Hosting
+                  primary_key: Web Hosting
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Secure Websites
+                  primary_key: Secure Websites
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Web-based Applications
+                  primary_key: Web-based Applications
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Charitable Organizations
+                  primary_key: Charitable Organizations
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Remote Access
+                  primary_key: Remote Access
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Web Analytics
+                  primary_key: Web Analytics
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Online Meeting
+                  primary_key: Online Meeting
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: URL Shortening
+                  primary_key: URL Shortening
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Artificial Intelligence Technology
+                  primary_key: Artificial Intelligence Technology
               - action: allow
                 category:
                   datasource: security/fortiguard-categories
-                  primaryKey: Cryptocurrency
+                  primary_key: Cryptocurrency
   
 
 

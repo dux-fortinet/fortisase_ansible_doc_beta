@@ -69,30 +69,30 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "policy1"
+      primary_key: "policy1"
     tasks:
       - name: Create a new endpoint profile, do nothing if the endpoint profile already exists
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: true
       - name: Update protection profile
         fortinet.fortisase.endpoint_protection_profiles:
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             antiransomware: "disable"
             antivirus: "enable"
-            automaticallyPatchVulnerabilities: "disable"
-            defaultAction: "allow"
-            eventBasedScanning: "enable"
-            notifyEndpointOfBlocks: "enable"
+            automatically_patch_vulnerabilities: "disable"
+            default_action: "allow"
+            event_based_scanning: "enable"
+            notify_endpoint_of_blocks: "enable"
             rules: []
-            scheduledScan:
+            scheduled_scan:
               day: 1
               repeat: "weekly"
               time: "00:00"
-            vulnerabilityScan: "enable"
+            vulnerability_scan: "enable"
   
 
 

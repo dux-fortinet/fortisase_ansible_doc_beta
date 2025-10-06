@@ -45,14 +45,14 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "$sase-global"
+      primary_key: "$sase-global"
     tasks:
       - name: Update Security Video Filter YouTube Key
         fortinet.fortisase.security_video_filter_youtube_key:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
-            apiKey: "YOUR_API_KEY"
+            primary_key: "{{ primaryKey }}"
+            api_key: "YOUR_API_KEY"
   
 
 

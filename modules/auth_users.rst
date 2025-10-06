@@ -51,14 +51,14 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "user_example@example.com"
+      primary_key: "user_example@example.com"
     tasks:
       - name: Create auth user
         fortinet.fortisase.auth_users:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"  # For SASE authenticated users, name must match email.
-            authType: "password"
+            primary_key: "{{ primaryKey }}"  # For SASE authenticated users, name must match email.
+            auth_type: "password"
             password: "example_password"
             email: "{{ primaryKey }}"
             status: "enable"
@@ -67,13 +67,13 @@ Examples
         fortinet.fortisase.auth_users:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             status: "disable"
       - name: Delete auth user
         fortinet.fortisase.auth_users:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

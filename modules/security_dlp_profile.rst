@@ -70,13 +70,13 @@ Examples
         fortinet.fortisase.security_profile_group:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
+            primary_key: "{{ profile_group }}"
       - name: Update security dlp profile
         fortinet.fortisase.security_dlp_profile:
           params:
             direction: "{{ direction }}"
-            primaryKey: "{{ profile_group }}"
-            dlpRules: []
+            primary_key: "{{ profile_group }}"
+            dlp_rules: []
   
 
 

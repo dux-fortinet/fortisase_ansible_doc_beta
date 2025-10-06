@@ -66,39 +66,39 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "reverse_policy_ansible"
+      primary_key: "reverse_policy_ansible"
     tasks:
       - name: Create/Update security internal reverse policies
         fortinet.fortisase.security_internal_reverse_policies:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: true
             scope: "vpn-user"
             services:
-              - primaryKey: "SSH"
+              - primary_key: "SSH"
                 datasource: "security/services"
-              - primaryKey: "RDP"
+              - primary_key: "RDP"
                 datasource: "security/services"
             action: "deny"
-            logTraffic: "all"
-            profileGroup:
+            log_traffic: "all"
+            profile_group:
               group:
-                primaryKey: "internal"
+                primary_key: "internal"
                 datasource: "security/profile-groups"
-              forceCertInspection: false
+              force_cert_inspection: false
             sources:
-              - primaryKey: "gui_test"
+              - primary_key: "gui_test"
                 datasource: "network/hosts"
             schedule:
-              primaryKey: "always"
+              primary_key: "always"
               datasource: "security/recurring-schedules"
             comments: "Allow IT Admins remote access to machines of mobile workers"
       - name: Delete security internal reverse policies
         fortinet.fortisase.security_internal_reverse_policies:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

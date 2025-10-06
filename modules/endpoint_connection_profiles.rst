@@ -129,35 +129,35 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "policy1"
+      primary_key: "policy1"
     tasks:
       - name: Create a new endpoint profile, do nothing if the endpoint profile already exists
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             enabled: true
       - name: Update connection profile
         fortinet.fortisase.endpoint_connection_profiles:
           params:
-            primaryKey: "{{ primaryKey }}"
-            allowInvalidServerCertificate: "enable"
-            allowPersonalVpns: false
-            authBeforeUserLogon: false
-            availableVPNs: []
-            connectToFortiSASE: "manually"
-            enableInvalidServerCertWarning: "disable"
-            endpointOnNetBypass: false
-            preferredDTLSTunnel: "enable"
-            secureInternetAccess:
-              authenticateWithSSO: "disable"
-              externalBrowserSamlLogin: "disable"
-            useGuiSamlAuth: "disable"
+            primary_key: "{{ primaryKey }}"
+            allow_invalid_server_certificate: "enable"
+            allow_personal_vpns: false
+            auth_before_user_logon: false
+            available_vpns: []
+            connect_to_forti_sase: "manually"
+            enable_invalid_server_cert_warning: "disable"
+            endpoint_on_net_bypass: false
+            preferred_dtlstunnel: "enable"
+            secure_internet_access:
+              authenticate_with_sso: "disable"
+              external_browser_saml_login: "disable"
+            use_gui_saml_auth: "disable"
       - name: Delete connection profile
         fortinet.fortisase.endpoint_connection_profiles:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

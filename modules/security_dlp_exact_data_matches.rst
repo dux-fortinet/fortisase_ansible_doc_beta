@@ -57,31 +57,31 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "asbmatches"
+      primary_key: "asbmatches"
     tasks:
       - name: Create/Update Security DLP Exact Data Matches
         fortinet.fortisase.security_dlp_exact_data_matches:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
-            externalResourceData:
+            primary_key: "{{ primaryKey }}"
+            external_resource_data:
               resource: "https://example-resource.com"
               username: "admin"
               password: "password123"
-              refreshRate: 3600
-              updateMethod: "feed"
-            optionalCount: 0
+              refresh_rate: 3600
+              update_method: "feed"
+            optional_count: 0
             columns:
               - index: 1
                 optional: false
                 type:
                   datasource: "security/dlp-data-types"
-                  primaryKey: "credit-card"
+                  primary_key: "credit-card"
       - name: Delete Security DLP Exact Data Matches
         fortinet.fortisase.security_dlp_exact_data_matches:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

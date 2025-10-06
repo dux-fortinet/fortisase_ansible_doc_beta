@@ -55,20 +55,20 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "asbsignatures"
+      primary_key: "asbsignatures"
     tasks:
       - name: Create/Update Security Application Custom Signatures
         fortinet.fortisase.security_app_custom_signatures:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             signature: "{{ lookup('file', 'signature.txt') }}"
             tag: "customsignature_example"
       - name: Delete Security Application Custom Signatures
         fortinet.fortisase.security_app_custom_signatures:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

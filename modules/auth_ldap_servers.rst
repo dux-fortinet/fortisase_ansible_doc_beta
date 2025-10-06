@@ -67,33 +67,33 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "ldap_server_example"
+      primary_key: "ldap_server_example"
     tasks:
       - name: Create/Update Auth LDAP Server
         fortinet.fortisase.auth_ldap_servers:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             server: "1.1.1.1"
             port: 1111
             cnid: "test"
             dn: "cn=admin,dc=example,dc=com"
-            clientCertAuthEnabled: false
-            bindType: "simple"
-            secureConnection: false
-            serverIdentityCheckEnabled: true
-            advancedGroupMatchingEnabled: true
-            groupMemberCheck: "user-attr"
-            groupFilter: "cn=group,dc=example,dc=com"
-            groupSearchBase: "dc=example,dc=com"
+            client_cert_auth_enabled: false
+            bind_type: "simple"
+            secure_connection: false
+            server_identity_check_enabled: true
+            advanced_group_matching_enabled: true
+            group_member_check: "user-attr"
+            group_filter: "cn=group,dc=example,dc=com"
+            group_search_base: "dc=example,dc=com"
             certificate:
-              primaryKey: "certificate"
+              primary_key: "certificate"
               datasource: "system/certificate/ca-certificates"
       - name: Delete Auth LDAP Server
         fortinet.fortisase.auth_ldap_servers:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 

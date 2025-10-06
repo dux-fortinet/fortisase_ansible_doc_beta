@@ -70,24 +70,24 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primaryKey: "service_example"
+      primary_key: "service_example"
     tasks:
       - name: Create/Update security service
         fortinet.fortisase.security_services:
           state: present
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
             proxy: false
             category: "Email"
             protocol: "TCP/UDP/SCTP"
-            tcpPortrange:
+            tcp_portrange:
               - destination:
                   low: 25
       - name: Delete security service
         fortinet.fortisase.security_services:
           state: absent
           params:
-            primaryKey: "{{ primaryKey }}"
+            primary_key: "{{ primaryKey }}"
   
 
 
