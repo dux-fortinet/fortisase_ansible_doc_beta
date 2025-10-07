@@ -76,7 +76,7 @@ Examples
         fortinet.fortisase.security_internal_policies:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             enabled: true
             scope: "vpn-user"
             users:
@@ -106,7 +106,7 @@ Examples
         fortinet.fortisase.security_internal_policies:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

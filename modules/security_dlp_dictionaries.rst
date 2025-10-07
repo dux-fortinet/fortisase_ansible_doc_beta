@@ -55,13 +55,13 @@ Examples
     hosts: fortisase
     gather_facts: false
     vars:
-      primary_key: "asbdictionaries"
+      primary_key: "example_dlp_dictionary"
     tasks:
       - name: Create/Update Security DLP Dictionaries
         fortinet.fortisase.security_dlp_dictionaries:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             dictionary_type: "sensor"
             entries_to_evaluate: "all"
             entries:
@@ -75,7 +75,7 @@ Examples
         fortinet.fortisase.security_dlp_dictionaries:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

@@ -30,7 +30,7 @@ Parameters
  <li><span class="li-head">force_behavior</span> Specify this option to force the method to use to interact with the resource.<span class="li-normal">type: str</span><span class="li-normal">choices: ['none', 'read', 'create', 'update', 'delete']</span><span class="li-normal">default: none</span></li>
  <li><span class="li-head">bypass_validation</span> Bypass validation of the module.<span class="li-normal">type: bool</span><span class="li-normal">default: False</span></li>
  <li><span class="li-head">params</span> The parameters of the module.<span class="li-required">[Required]</span><span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">primary_key</span> <span class="li-required">[Required]</span><span class="li-normal">type: str</span></li>
- <li><span class="li-head">connect_to_forti_sase</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['automatically', 'manually']</span></li>
+ <li><span class="li-head">connect_to_fortisase</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['automatically', 'manually']</span></li>
  <li><span class="li-head">lockdown</span> <span class="li-normal">type: dict</span> <ul class="ul-self"> <li><span class="li-head">status</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
  <li><span class="li-head">grace_period</span> <span class="li-normal">type: int</span></li>
  <li><span class="li-head">max_attempts</span> <span class="li-normal">type: int</span></li>
@@ -82,7 +82,7 @@ Parameters
  <li><span class="li-head">use_gui_saml_auth</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
  <li><span class="li-head">allow_personal_vpns</span> <span class="li-normal">type: bool</span></li>
  <li><span class="li-head">mtu_size</span> <span class="li-normal">type: int</span></li>
- <li><span class="li-head">available_vp_ns</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">type</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['ipSecVPN', 'sslVPN']</span></li>
+ <li><span class="li-head">available_vpns</span> <span class="li-normal">type: list</span><span class="li-normal">elements: dict</span> <ul class="ul-self"> <li><span class="li-head">type</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['ipSecVPN', 'sslVPN']</span></li>
  <li><span class="li-head">name</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">remote_gateway</span> <span class="li-normal">type: str</span></li>
  <li><span class="li-head">username_prompt</span> <span class="li-normal">type: str</span><span class="li-normal">choices: ['disable', 'enable']</span></li>
@@ -135,29 +135,24 @@ Examples
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             enabled: true
       - name: Update connection profile
         fortinet.fortisase.endpoint_connection_profiles:
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             allow_invalid_server_certificate: "enable"
             allow_personal_vpns: false
             auth_before_user_logon: false
             available_vpns: []
-            connect_to_forti_sase: "manually"
+            connect_to_fortisase: "manually"
             enable_invalid_server_cert_warning: "disable"
             endpoint_on_net_bypass: false
-            preferred_dtlstunnel: "enable"
+            preferred_dtls_tunnel: "enable"
             secure_internet_access:
               authenticate_with_sso: "disable"
               external_browser_saml_login: "disable"
             use_gui_saml_auth: "disable"
-      - name: Delete connection profile
-        fortinet.fortisase.endpoint_connection_profiles:
-          state: absent
-          params:
-            primary_key: "{{ primaryKey }}"
   
 
 

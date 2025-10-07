@@ -64,7 +64,7 @@ Examples
         fortinet.fortisase.infra_ssids:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             broadcast_ssid: "enable"
             security_mode: "wpa2-only-personal"
             pre_shared_key: "1234567890"
@@ -74,7 +74,7 @@ Examples
         fortinet.fortisase.infra_ssids:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

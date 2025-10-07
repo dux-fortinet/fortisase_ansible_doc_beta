@@ -54,14 +54,14 @@ Examples
         fortinet.fortisase.dem_custom_saas_apps:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             fqdn: "{{ fqdn }}"
             alias: "{{ alias }}"
       - name: Delete Dem Custom SaaS Apps
         fortinet.fortisase.dem_custom_saas_apps:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

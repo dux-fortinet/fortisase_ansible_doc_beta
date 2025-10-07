@@ -58,12 +58,12 @@ Examples
         fortinet.fortisase.security_dlp_sensors:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             entry_matches_to_trigger_sensor: "all"
             sensor_dictionaries:
               - dictionary_id: 1
                 dictionary:
-                  primary_key: "gui_dlp_dictionary"
+                  primary_key: "example_dlp_dictionary"
                   datasource: "security/dlp-dictionaries"
                 dictionary_matches_to_consider_risk: 255
                 status: "enable"
@@ -71,7 +71,7 @@ Examples
         fortinet.fortisase.security_dlp_sensors:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

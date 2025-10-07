@@ -56,7 +56,7 @@ Examples
         fortinet.fortisase.endpoint_group_invitation_codes:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             expire_date: "2026-03-08T12:45:30Z"
             group_assignment:
               enabled: true
@@ -67,7 +67,7 @@ Examples
         fortinet.fortisase.endpoint_group_invitation_codes:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

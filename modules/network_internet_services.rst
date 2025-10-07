@@ -55,12 +55,12 @@ Examples
         fortinet.fortisase.network_internet_services:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
       - name: Delete network internet services
         fortinet.fortisase.network_internet_services:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

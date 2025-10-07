@@ -63,7 +63,7 @@ Examples
         fortinet.fortisase.security_dlp_exact_data_matches:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             external_resource_data:
               resource: "https://example-resource.com"
               username: "admin"
@@ -81,7 +81,7 @@ Examples
         fortinet.fortisase.security_dlp_exact_data_matches:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

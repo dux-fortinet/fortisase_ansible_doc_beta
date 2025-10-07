@@ -73,7 +73,7 @@ Examples
         fortinet.fortisase.auth_ldap_servers:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             server: "1.1.1.1"
             port: 1111
             cnid: "test"
@@ -93,7 +93,7 @@ Examples
         fortinet.fortisase.auth_ldap_servers:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

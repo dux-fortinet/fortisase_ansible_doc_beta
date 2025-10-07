@@ -59,7 +59,7 @@ Examples
         fortinet.fortisase.auth_user_groups:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             group_type: "firewall"
             local_users:
               - primary_key: "example_user@example.com"
@@ -73,7 +73,7 @@ Examples
         fortinet.fortisase.auth_user_groups:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

@@ -56,8 +56,8 @@ Examples
           state: present
           params:
             format: "regular"
-            primary_key: "{{ primaryKey }}"
-            cert_name: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
+            cert_name: "{{ primary_key }}"
             password: "fortinet"
             file_content: "{{ lookup('file', 'server_cert.pem') | b64encode }}"
             key_file_content: "{{ lookup('file', 'server_key.pem') | b64encode }}"
@@ -65,7 +65,7 @@ Examples
         fortinet.fortisase.security_cert_local_certs:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

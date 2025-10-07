@@ -53,7 +53,7 @@ Examples
         fortinet.fortisase.security_recurring_schedules:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             days:
               - "sunday"
               - "monday"
@@ -67,7 +67,7 @@ Examples
         fortinet.fortisase.security_recurring_schedules:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

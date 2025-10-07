@@ -61,14 +61,14 @@ Examples
         fortinet.fortisase.security_app_custom_signatures:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             signature: "{{ lookup('file', 'signature.txt') }}"
             tag: "customsignature_example"
       - name: Delete Security Application Custom Signatures
         fortinet.fortisase.security_app_custom_signatures:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

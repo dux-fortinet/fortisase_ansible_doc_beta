@@ -58,7 +58,7 @@ Examples
 
 .. code-block:: yaml
 
-  # To configure this resource, please disable proxy configuration.
+  # To configure this resource, please disable SWG Configuration.
   - name: Update security application control profile
     hosts: fortisase
     gather_facts: false

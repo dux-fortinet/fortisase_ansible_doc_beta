@@ -69,7 +69,7 @@ Examples
       - name: Create/Update Auth SWG SAML Server
         fortinet.fortisase.auth_swg_saml_server:
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             enabled: true
             digest_method: "sha256"
             idp_entity_id: "https://sts.windows.net/example/"
@@ -89,7 +89,7 @@ Examples
       - name: Delete Auth SWG SAML Server
         fortinet.fortisase.auth_swg_saml_server:
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             enabled: false
   
 

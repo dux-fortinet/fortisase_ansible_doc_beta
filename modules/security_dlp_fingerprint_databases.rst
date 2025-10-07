@@ -67,7 +67,7 @@ Examples
         fortinet.fortisase.security_dlp_fingerprint_databases:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             server: "example-server.com"
             sensitivity: "Warning"
             include_subdirectories: "enable"
@@ -87,7 +87,7 @@ Examples
         fortinet.fortisase.security_dlp_fingerprint_databases:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

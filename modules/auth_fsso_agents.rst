@@ -64,8 +64,8 @@ Examples
         fortinet.fortisase.auth_fsso_agents:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
-            name: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
+            name: "{{ primary_key }}"
             server: "1.2.3.4"
             status: "disconnected"
             password: "password"
@@ -74,7 +74,7 @@ Examples
         fortinet.fortisase.auth_fsso_agents:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

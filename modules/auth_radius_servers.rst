@@ -56,7 +56,7 @@ Examples
         fortinet.fortisase.auth_radius_servers:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             primary_secret: "radius"
             primary_server: "2.3.4.5"
             auth_type: "auto"
@@ -65,7 +65,7 @@ Examples
         fortinet.fortisase.auth_radius_servers:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

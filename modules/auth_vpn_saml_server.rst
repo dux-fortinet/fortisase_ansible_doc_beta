@@ -68,7 +68,7 @@ Examples
         fortinet.fortisase.auth_vpn_saml_server:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             enabled: true
             digest_method: "sha256"
             idp_entity_id: "https://sts.windows.net/example/"
@@ -89,26 +89,26 @@ Examples
         fortinet.fortisase.fortisase_facts:
           selector: "auth_vpn_saml_server"
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
         register: result
         until: result.response[0]['$meta'].state == "done"
-        retries: 15
+        retries: 20
         delay: 10
         failed_when: result.response[0]['$meta'].state != "done"
   
       - name: Delete Auth VPN SAML Server
         fortinet.fortisase.auth_vpn_saml_server:
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             enabled: false
       - name: Wait until the resource $meta doesn't have state
         fortinet.fortisase.fortisase_facts:
           selector: "auth_vpn_saml_server"
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
         register: result
         until: result.response[0]['$meta']['state'] is not defined
-        retries: 15
+        retries: 20
         delay: 10
   
 

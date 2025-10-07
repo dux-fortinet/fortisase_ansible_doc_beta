@@ -57,7 +57,7 @@ Examples
         fortinet.fortisase.dem_spa_applications:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             server: "string"
             latency_threshold: 10000000
             jitter_threshold: 10000000
@@ -69,7 +69,7 @@ Examples
         fortinet.fortisase.dem_spa_applications:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

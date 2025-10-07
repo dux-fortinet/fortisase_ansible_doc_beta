@@ -52,14 +52,14 @@ Examples
         fortinet.fortisase.security_fortiguard_local_categories:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             threat_weight: "low"
             urls: ["example.com"]
       - name: Delete Security FortiGuard Local Categories
         fortinet.fortisase.security_fortiguard_local_categories:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

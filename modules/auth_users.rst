@@ -57,23 +57,23 @@ Examples
         fortinet.fortisase.auth_users:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"  # For SASE authenticated users, name must match email.
+            primary_key: "{{ primary_key }}"  # For SASE authenticated users, name must match email.
             auth_type: "password"
             password: "example_password"
-            email: "{{ primaryKey }}"
+            email: "{{ primary_key }}"
             status: "enable"
       # Only status can be updated, trying to update other parameters will fail
       - name: Update auth user
         fortinet.fortisase.auth_users:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             status: "disable"
       - name: Delete auth user
         fortinet.fortisase.auth_users:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

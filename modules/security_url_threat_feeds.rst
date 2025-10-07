@@ -57,7 +57,7 @@ Examples
         fortinet.fortisase.security_url_threat_feeds:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             refresh_rate: 10
             status: "enable"
             uri: "https://www.virustotal.com/api/v3/domains/example.com/threat-feed"
@@ -68,7 +68,7 @@ Examples
         fortinet.fortisase.security_url_threat_feeds:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

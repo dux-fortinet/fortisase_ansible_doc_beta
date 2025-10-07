@@ -52,13 +52,13 @@ Examples
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             enabled: true
       - name: Delete endpoint profile
         fortinet.fortisase.endpoint_policies:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

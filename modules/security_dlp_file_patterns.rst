@@ -51,7 +51,7 @@ Examples
     vars:
       dlp_file_pattern_name: "dlp_file_patterns_example"
     tasks:
-      # The primaryKey is a digital id, it is "result.response.primaryKey"
+      # The primary_key is a digital id, it is "result.response.primaryKey"
       # Please use the primaryKey in the result to update/delete the target resource
       - name: Create Security DLP File Patterns
         fortinet.fortisase.security_dlp_file_patterns:

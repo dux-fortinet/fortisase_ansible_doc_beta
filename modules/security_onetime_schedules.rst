@@ -53,14 +53,14 @@ Examples
         fortinet.fortisase.security_onetime_schedules:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             start_utc: 1422835200
             end_utc: 1454371200
       - name: Delete security onetime schedules
         fortinet.fortisase.security_onetime_schedules:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

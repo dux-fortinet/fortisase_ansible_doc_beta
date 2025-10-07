@@ -53,14 +53,14 @@ Examples
         fortinet.fortisase.security_pki_users:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             ca:
               name: "Fortinet_CA"
       - name: Delete Security PKI Users
         fortinet.fortisase.security_pki_users:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

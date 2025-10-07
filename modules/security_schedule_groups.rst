@@ -53,7 +53,7 @@ Examples
         fortinet.fortisase.security_schedule_groups:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             members:
               - datasource: "security/recurring-schedules"
                 primary_key: "always"
@@ -61,7 +61,7 @@ Examples
         fortinet.fortisase.security_schedule_groups:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

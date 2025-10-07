@@ -55,7 +55,7 @@ Examples
         fortinet.fortisase.network_dns_rules:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             primary_dns: "1.1.1.1"
             secondary_dns: "1.1.1.2"
             domains:
@@ -66,7 +66,7 @@ Examples
         fortinet.fortisase.network_dns_rules:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

@@ -52,12 +52,12 @@ Examples
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             enabled: true
       - name: Update group ad user profile
         fortinet.fortisase.endpoint_group_ad_user_profiles:
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             ad_user_ids: []
             group_ids: []
   

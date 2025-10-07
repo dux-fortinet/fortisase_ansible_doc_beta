@@ -76,7 +76,7 @@ Examples
         fortinet.fortisase.security_services:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             proxy: false
             category: "Email"
             protocol: "TCP/UDP/SCTP"
@@ -87,7 +87,7 @@ Examples
         fortinet.fortisase.security_services:
           state: absent
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
   
 
 

@@ -51,7 +51,7 @@ Examples
         fortinet.fortisase.security_video_filter_youtube_key:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             api_key: "YOUR_API_KEY"
   
 

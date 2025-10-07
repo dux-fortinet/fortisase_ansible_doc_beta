@@ -67,13 +67,13 @@ Examples
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             enabled: true
       - name: Enable endpoint ZTNA profiles
         fortinet.fortisase.endpoint_ztna_profiles:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             allow_automatic_sign_on: "enable"
             connection_rules:
               - id: 1

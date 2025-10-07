@@ -56,12 +56,12 @@ Examples
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             enabled: true
       - name: Update setting profile
         fortinet.fortisase.endpoint_setting_profiles:
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             notify_vpn_issue: "enable"
             show_notifications: "enable"
             show_tag_forti_client: "disable"

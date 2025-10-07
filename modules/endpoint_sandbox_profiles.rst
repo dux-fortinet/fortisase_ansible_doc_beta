@@ -68,12 +68,12 @@ Examples
         fortinet.fortisase.endpoint_policies:
           state: present
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             enabled: true
       - name: Update sandbox profile
         fortinet.fortisase.endpoint_sandbox_profiles:
           params:
-            primary_key: "{{ primaryKey }}"
+            primary_key: "{{ primary_key }}"
             sandbox_mode: "FortiSASE"  # Disabled, FortiSASE, StandaloneFortiSandbox
             detection_verdict_level: "Medium"
             exceptions:
