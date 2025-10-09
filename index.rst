@@ -26,3 +26,13 @@ The FortiSASE Ansible Collection provides Ansible modules for configuring FortiS
    :maxdepth: 1
 
    release.rst
+
+Fortinet Ansible Collections
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- `FortiOS Ansible Collections <https://ansible-galaxy-fortios-docs.readthedocs.io/en/latest/>`_
+- `FortiManager Ansible Collections <https://ansible-galaxy-fortimanager-docs.readthedocs.io/en/latest/>`_
+- `FortiManager Device Ansible Collections <https://ansible-galaxy-fmgdevice-docs.readthedocs.io/en/latest/>`_
+- `FortiAnalyzer Ansible Collections <https://ansible-galaxy-fortianalyzer-docs.readthedocs.io/en/latest/>`_
+- `FortiFlex Ansible Collections <https://ansible-galaxy-fortiflexvm-docs.readthedocs.io/en/latest/>`_
+- `FortiSASE Ansible Collections <https://ansible-galaxy-fortisase-docs.readthedocs.io/en/latest/>`_
