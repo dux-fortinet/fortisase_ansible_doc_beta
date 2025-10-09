@@ -44,12 +44,12 @@ Create a file named ``test.yml``:
         fortinet.fortisase.fortisase_facts:
           selector: "network_dns_rules"
           params:
-            primaryKey: "1"
+            primary_key: "1"
       - name: Query all network dns rules
         fortinet.fortisase.fortisase_facts:
           selector: "network_dns_rules"
           params:
-            primaryKey: null
+            primary_key: null
 
 
 Run the playbook

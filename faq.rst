@@ -73,13 +73,13 @@ Examples:
           # force_behavior: update # if you want to force the resource to be updated
           # bypass_validation: true # if you want to bypass the Ansible built-in validation
           params:
-            primaryKey: "1"
-            primaryDns: "1.1.1.1"
-            secondaryDns: "1.1.1.2"
+            primary_key: "1"
+            primary_dns: "1.1.1.1"
+            secondary_dns: "1.1.1.2"
             domains:
               - www.facebook.com
               - www.google.com
-            popDnsOverride: {}
+            pop_dns_override: {}
 
 state
 ^^^^^
@@ -178,7 +178,7 @@ Solution 2: Add vars "ansible_facts_modules: setup" to your playbook.
         fortinet.fortisase.fortisase_facts:
           selector: "network_dns_rules"
           params:
-            primaryKey: "1"
+            primary_key: "1"
 
 Solution 3: Add "gather_facts: false" to your playbook.
 
@@ -192,7 +192,7 @@ Solution 3: Add "gather_facts: false" to your playbook.
         fortinet.fortisase.fortisase_facts:
           selector: "network_dns_rules"
           params:
-            primaryKey: "1"
+            primary_key: "1"
 
 .. _fortiapi spec page: https://fndn.fortinet.net/index.php?/fortiapi/2625-fortisase/
 .. _What is inventory file?: https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html
